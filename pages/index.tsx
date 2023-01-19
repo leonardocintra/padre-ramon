@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Cabecalho from "../components/Cabecalho";
 import BarraMenu from "../components/BarraMenu";
+import QuadroPost from "../components/QuadroPost";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="h-screen p-5 bg-gradient-to-r from-yellow-50 via-cyan-100 to-yellow-50">
         <BarraMenu></BarraMenu>
         <Cabecalho titulo="Padre Ramon" subTitulo="31/08/1943 - 01/05/1996" />
+        <QuadroPost></QuadroPost>
       </main>
     </>
   );
