@@ -15,7 +15,10 @@ export default function QuadroFotos(props: QuadroFotosProps) {
           Fotos de Padre Ramón
         </h3>
         <div className="grid grid-cols-4 grid-rows-2 gap-6">
-          <div className="col-span-2 row-span-2 rounded-lg overflow-hidden">
+          <div className="relative col-span-2 row-span-2 rounded-lg overflow-hidden">
+            <div className="absolute bottom-0 pl-4 pb-4 text-2xl font-medium text-white sm:text-black">
+              Padre junto responsaveis do caminho
+            </div>
             <Image
               src={FotoPadreRamon1}
               alt="Foto 1"
