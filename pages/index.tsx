@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Cabecalho from "../components/Cabecalho";
 import Banner from "../components/Banner";
 import QuadroPost from "../components/QuadroPost";
+import QuadroFotos from "../components/QuadroFotos";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Cabecalho />
         <Banner />
         <QuadroPost></QuadroPost>
+        <QuadroFotos></QuadroFotos>
         {/* <CardExperimental titulo="ronaldo" descricao="ronaldo" rodape="robinho" /> */}
       </main>
     </>
