@@ -4,6 +4,7 @@ import Cabecalho from "../components/Cabecalho";
 import Banner from "../components/Banner";
 import QuadroPost from "../components/QuadroPost";
 import QuadroFotos from "../components/QuadroFotos";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function Home() {
         <QuadroPost></QuadroPost>
         <QuadroFotos></QuadroFotos>
         {/* <CardExperimental titulo="ronaldo" descricao="ronaldo" rodape="robinho" /> */}
+        <Footer></Footer>
       </main>
     </>
   );

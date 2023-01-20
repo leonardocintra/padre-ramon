@@ -11,7 +11,7 @@ export default function Cabecalho(props: CabecalhoProps) {
     // </div>
 
     <div>
-      <div className="container mx-auto px-4 h-24 flex items-center">
+      <div className="container max-w-5xl mx-auto px-4 h-24 flex items-center">
         <div className="font-black">LOGO</div>
 
         <ul className="flex items-center ml-auto space-x-4">

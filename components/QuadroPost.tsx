@@ -6,9 +6,9 @@ interface QuadroPostProps {}
 export default function QuadroPost(props: QuadroPostProps) {
   return (
     <div>
-      <div className="container mx-auto px-4 py-10">
-        <div className="flex">
-          <div className="pr-10">
+      <div className="container mx-auto px-4 py-20">
+        <div className="flex flex-col-reverse lg:flex-row">
+          <div className="lg:pr-10">
             <div className="text-sm text-gray-400 font-medium uppercase">
               Causa de Beatificação
             </div>
@@ -64,7 +64,7 @@ export default function QuadroPost(props: QuadroPostProps) {
             </div>
           </div>
 
-          <div className="flex-shrink-0 ml-auto">
+          <div className="flex-shrink-0 lg:ml-auto">
             <Image src={FotoPadreRamon1} alt="foto do padre" width={450} />
           </div>
         </div>
