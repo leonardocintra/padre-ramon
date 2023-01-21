@@ -1,3 +1,5 @@
+import enviarEmail from "../services/sendGrid";
+
 export default function Contato() {
   return (
     <form className="flex w-full max-w-sm space-x-3">
@@ -41,7 +43,8 @@ export default function Contato() {
           </div>
           <div className="col-span-2 text-right">
             <button
-              type="submit"
+              type="button"
+              onClick={enviarEmail}
               className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
             >
               Send
