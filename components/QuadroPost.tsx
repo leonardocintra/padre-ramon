@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import FotoPadreRamon1 from "public/img/brasilia/2.jpg";
 
 interface QuadroPostProps {}
@@ -8,7 +9,7 @@ export default function QuadroPost(props: QuadroPostProps) {
     <div>
       <div className="container mx-auto px-4 py-20">
         <div className="flex flex-col-reverse lg:flex-row">
-          <div className="lg:pr-10">
+          <div className="mt-5 lg:pr-10">
             <div className="text-sm text-gray-400 font-medium uppercase">
               Causa de Beatificação
             </div>
@@ -44,14 +45,17 @@ export default function QuadroPost(props: QuadroPostProps) {
             </div>
 
             <div className="mt-4">
-              <button className="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+              <Link
+                href={"contato"}
+                className="inline-flex items-center bg-orange-500 text-gray-100 font-medium px-3 py-2 rounded"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 mr-2"
+                  className="w-6 h-6 mr-2 text-gray-50"
                 >
                   <path
                     strokeLinecap="round"
@@ -60,12 +64,17 @@ export default function QuadroPost(props: QuadroPostProps) {
                   />
                 </svg>
                 Enviar um relato
-              </button>
+              </Link>
             </div>
           </div>
 
-          <div className="flex-shrink-0 lg:ml-auto">
-            <Image src={FotoPadreRamon1} alt="foto do padre" width={450} />
+          <div className="flex-shrink-0">
+            <Image
+              src={FotoPadreRamon1}
+              alt="foto do padre"
+              width={450}
+              className="rounded-lg shadow-xl shadow-green-200"
+            />
           </div>
         </div>
       </div>
