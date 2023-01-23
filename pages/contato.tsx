@@ -1,11 +1,58 @@
-import enviarEmail from "../services/sendGrid";
+import { SendEmailInterface } from "./api/interfaces/sendgrid-interface";
 
 export default function Contato() {
+  const handleSubmit = async () => {
+    const endpoint = "/api/sendgrid";
+
+    const data: SendEmailInterface = {
+      personalizations: [
+        {
+          to: [
+            {
+              email: "causadepadreramon@gmail.com",
+              name: "Causa de Padre Ramon",
+            },
+          ],
+          subject: "Relato envado do site",
+        },
+      ],
+      content: [
+        {
+          type: "text/html",
+          value: "<strong>Esse relato foi enviado do site </strong><br /> Leonardo Fazendo testes de envio de email",
+        },
+      ],
+      from: {
+        email: "causadepadreramon@gmail.com",
+        name: "Causa Padre Ramon",
+      },
+      reply_to: {
+        email: "causadepadreramon@gmail.com",
+        name: "Causa Padre Ramon",
+      },
+    };
+
+    const JSONdata = JSON.stringify(data);
+
+    const options = {
+      // The method is POST because we are sending data.
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    };
+
+    await fetch(endpoint, options);
+  };
+
   return (
-    <form className="flex w-full max-w-sm space-x-3">
+    <form onSubmit={handleSubmit} className="flex w-full max-w-sm space-x-3">
       <div className="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow dark:bg-gray-800">
         <div className="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
-          Contact us !
+          Envie seu relato
         </div>
         <div className="grid max-w-xl grid-cols-2 gap-4 m-auto">
           <div className="col-span-2 lg:col-span-1">
@@ -37,17 +84,15 @@ export default function Contato() {
                 name="comment"
                 rows={5}
                 cols={40}
-                defaultValue={"                            "}
               />
             </label>
           </div>
           <div className="col-span-2 text-right">
             <button
-              type="button"
-              onClick={enviarEmail}
+              type="submit"
               className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
             >
-              Send
+              Enviar relato
             </button>
           </div>
         </div>
