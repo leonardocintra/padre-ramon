@@ -29,6 +29,6 @@ export default async function handler(
     const response = await fetch(url, config);
     res.status(202).json({ status: response.statusText });
   } catch (error) {
-    res.status(500).json({ status: 'Ocorreu um erro' + error});
+    res.status(500).json({ status: 'Ocorreu um erro ' + error});
   }
 }
