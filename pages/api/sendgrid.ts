@@ -13,6 +13,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+
+  console.log('ronaaaaaaaaaaaaaldo');
+
   const config = {
     method: "POST",
     headers: {
