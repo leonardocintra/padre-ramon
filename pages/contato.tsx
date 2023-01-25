@@ -3,9 +3,15 @@ import Cabecalho from "../components/Cabecalho";
 import Footer from "../components/Footer";
 import { SendEmailInterface } from "./api/interfaces/sendgrid-interface";
 import FotoPadreRamon from "public/img/editada/ramon.png";
-import Link from "next/link";
+import ButtonLaranja from "../components/Button";
+import { useState } from "react";
 
 export default function Contato() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [mensagem, setMensagem] = useState("");
+
   const handleSubmit = async () => {
     const endpoint = "/api/sendgrid";
 
@@ -18,14 +24,13 @@ export default function Contato() {
               name: "Causa de Padre Ramon",
             },
           ],
-          subject: "Relato envado do site",
+          subject: "Relato do site de: " + nome,
         },
       ],
       content: [
         {
           type: "text/html",
-          value:
-            "<strong>Esse relato foi enviado do site </strong><br /> Leonardo Fazendo testes de envio de email",
+          value: `<h1>Relato de ${nome}</h1> <h2>Email: ${email}</h2> <h2>Telefone / Whastapp: ${telefone}</h2> <p>${mensagem}</p>`,
         },
       ],
       from: {
@@ -38,17 +43,12 @@ export default function Contato() {
       },
     };
 
-    const JSONdata = JSON.stringify(data);
-
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
+      body: JSON.stringify(data),
     };
 
     await fetch(endpoint, options);
@@ -61,26 +61,11 @@ export default function Contato() {
         subTitulo="Precisamos de testemunhas"
       />
       <div className="flex justify-center items-center mt-10">
-        <Link
-          href={"/"}
-          className="inline-flex items-center bg-orange-500 text-gray-100 font-medium px-3 py-2 rounded"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6 mr-2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-            />
-          </svg>
-          Voltar para a pagina inicial
-        </Link>
+        <ButtonLaranja
+          href="/"
+          descricao="Voltar para pagina inicial"
+          svg="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+        ></ButtonLaranja>
       </div>
       <div className="flex justify-end h-full max-h-96">
         <Image
@@ -100,8 +85,13 @@ export default function Contato() {
                 <div className=" relative ">
                   <input
                     type="text"
-                    id="contact-form-name"
-                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    name="nome"
+                    id="nome"
+                    value={nome}
+                    onChange={(e) => {
+                      setNome(e.target.value);
+                    }}
+                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
                     placeholder="Nome"
                   />
                 </div>
@@ -109,20 +99,39 @@ export default function Contato() {
               <div className="col-span-2 lg:col-span-1">
                 <div className=" relative ">
                   <input
-                    type="text"
-                    id="contact-form-email"
-                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
                     placeholder="E-mail"
                   />
                 </div>
               </div>
               <div className="col-span-2">
                 <label className="text-gray-700" htmlFor="name">
+                  <input
+                    type="text"
+                    id="telefone"
+                    name="telefone"
+                    value={telefone}
+                    onChange={(e) => setTelefone(e.target.value)}
+                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
+                    placeholder="Telefone / Whatsapp"
+                  />
+                </label>
+              </div>
+              <div className="col-span-2">
+                <label className="text-gray-700" htmlFor="name">
                   <textarea
-                    className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                    id="comment"
+                    className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
+                    id="mensagem"
                     placeholder="Descreva seu relato"
-                    name="comment"
+                    name="mensagem"
+                    onChange={(e) => {
+                      setMensagem(e.target.value);
+                    }}
                     rows={15}
                     cols={40}
                   />
