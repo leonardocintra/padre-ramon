@@ -19,28 +19,51 @@ export default function QuadroPost(props: QuadroPostProps) {
             <div className="text-sm font-medium">Descrição da causa</div>
             <div className="text-base text-gray-900 font-medium mt-4">
               <p className="mb-4">
-                Padre Ramón Sevillano Valencia nasceu em Cirauqui (Navarra), na
-                Espanha, em 1943. Realizou toda a sua formação religiosa, com
-                estudos em Filosofia e Teologia naquele país. Já como sacerdote,
-                exerceu o seu ministério como educador em escolas salesianas de
-                Barcelona, em bairros e distritos. Em 1979, pediu aos superiores
-                salesianos para se dedicar plenamente ao apostolado como
-                itinerante do Caminho Neocatecumenal.
+                Padre Ramón era um dos Catequistas Responsáveis do Brasil, do
+                Caminho Neocatecumenal, que doou sua vida a evangelização da
+                palavra de Cristo. Fez sua Páscoa no dia 05 de janeiro de 1996,
+                após um acidente automobilístico, na cidade de Ituverava, em São
+                Paulo.
               </p>
-              <p>
-                Exerceu a missão itinerante nas regiões de La Mancha,
-                Castilla-León, Astúrias, na Espanha, e também em Portugal,
-                partindo para o Brasil no ano de 1990. Em terras brasileiras,
-                trabalhou em diversas dioceses sempre como Presbítero
-                Itinerante: Franca, Brasília, São Paulo e Jundiaí. Ajudou a
-                fundar o Seminário Missionário Arquidiocesano “Redemptoris
-                Mater” de Brasília, um dos mais florescentes do Brasil.
-                Profundamente unido com a sua comunidade neocatecumenal de
-                origem, Padre Ramón Sevillano passou os últimos anos de sua vida
-                sem ter casa nem tempo para si mesmo, sendo um a mais nas
-                famílias que o acolhiam, sempre disposto a partir para outros
-                lugares, contatar pessoas para pregar a salvação, o amor de Deus
-                e sua predileção pelos pecadores.
+              <p className="mb-4">
+                Nascido em Cirauqui (Navarra), na Espanha, no dia 31 de agosto
+                de 1943, onde sempre teve uma vida de estudo dentro de sua
+                missão como presbítero. Seus formadores religiosos testemunhavam
+                a pessoa distinta que era, dotada de bom humor, além de
+                representar um cristão exemplar. Fora catecúmeno na Paróquia de
+                Santa Joaquina de Vedruna, em Barcelona, na Espanha.
+              </p>
+              <p className="mb-4">
+                No ano início do ano de 1979, solicitou aos seus superiores a
+                dedicação plena ao apostolado como itinerante do Caminho
+                Neocatecumenal, passando por diversas regiões da Espanha,
+                Portugal e, finalmente, no Brasil. Padre Ramón deteve um
+                importante papel na fundação do Seminário Missionário
+                Arquidiocesano Redemptoris Mater, de Brasília, além de ter
+                auxiliado na catequização de diversas cidades no país,
+                especialmente em São Paulo, Franca e Jundiaí, as quais hoje
+                colhem frutos, configurando importantes pilares do Caminho
+                Neocatecumenal no Brasil.
+              </p>
+              <p className="mb-4">
+                Sempre fora entregue ao Evangelho, com amor e dedicação que
+                demonstrava através de inúmeras palavras de iluminação e
+                carinho, principalmente aos mais necessitados. Padre Ramón quis
+                ser sepultado e enterrado no local em que morresse, sendo o
+                presente vídeo{" "}
+                <span className="font-light">(final da pagina) </span> o
+                testemunho do sinal de comunhão daqueles com quem compartilhou a
+                sua vida.
+              </p>
+              <p className="mb-4">
+                Símbolo de entrega ao anúncio itinerante do Evangelho, sua
+                presença celeste acompanha distintas graças a diversos irmãos
+                que confiam na sua fama de fé.
+              </p>
+              <p className="mb-4">
+                Kiko Argüello, iniciador do Caminho Neocatecumenal, ao expressar
+                acerca de sua morte, reproduziu palavras de ânimo, uma vez que,
+                nos céus, Padre Ramón muito mais fará ao anúncio do Kerygma
               </p>
             </div>
 

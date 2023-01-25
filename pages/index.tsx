@@ -20,7 +20,7 @@ export default function Home() {
       <main className="">
         <Cabecalho
           titulo="Padre Ramón Sevillano Valencia"
-          subTitulo="31/08/1943 - 01/05/1996"
+          subTitulo="31/08/1943 - 05/01/1996"
         />
         <QuadroPost></QuadroPost>
 
