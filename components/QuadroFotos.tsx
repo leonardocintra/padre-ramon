@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FotoPadreRamon1 from "public/img/brasilia/1.jpg";
+import FotoPadreRamon1 from "public/img/brasilia/9.jpg";
 import FotoPadreRamon2 from "public/img/brasilia/2.jpg";
 import FotoPadreRamon3 from "public/img/brasilia/3.jpg";
 import FotoPadreRamon4 from "public/img/brasilia/4.jpg";
@@ -14,9 +14,9 @@ export default function QuadroFotos(props: QuadroFotosProps) {
           Fotos de Padre Ramón
         </h3>
         <div className="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 space-y-6 md:space-y-0">
-          <div className="relative md:col-span-2 md:row-span-2 rounded-lg overflow-hidden shadow-lg">
-            <div className="absolute bottom-0 pl-4 pb-4 text-2xl font-medium text-white lg:text-black">
-              Padre junto responsaveis do caminho
+          <div className="relative md:col-span-2 md:row-span-2 rounded-lg overflow-hidden shadow-lg hover:shadow-amber-700">
+            <div className="absolute bottom-0 pl-4 pb-4 text-2xl font-medium text-white">
+              Ramon celebrando Eucaristia
             </div>
             <Image
               src={FotoPadreRamon1}
@@ -24,7 +24,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
               className="w-full h-full object-cover"
             ></Image>
           </div>
-          <div className="relative md:col-span-2 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative md:col-span-2 rounded-lg overflow-hidden shadow-lg hover:shadow-amber-700">
             <div className="absolute bottom-0 pl-4 pb-4 text-2xl font-medium text-white">
               Padre junto responsaveis do caminho
             </div>
@@ -34,9 +34,9 @@ export default function QuadroFotos(props: QuadroFotosProps) {
               className="w-full h-full object-cover"
             ></Image>
           </div>
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
+          <div className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-amber-700">
             <div className="absolute bottom-0 pl-4 pb-4 text-2xl font-medium text-white">
-              Padre junto responsaveis do caminho
+              Ramon e o bispo
             </div>
             <Image
               src={FotoPadreRamon3}
@@ -44,9 +44,9 @@ export default function QuadroFotos(props: QuadroFotosProps) {
               className="w-full h-full object-cover"
             ></Image>
           </div>
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
+          <div className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-amber-700">
             <div className="absolute bottom-0 pl-4 pb-4 text-2xl font-medium text-white">
-              Padre junto responsaveis do caminho
+              Pe. Ramon e Kiko
             </div>
             <Image
               src={FotoPadreRamon4}

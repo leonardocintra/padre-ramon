@@ -2,7 +2,7 @@ interface FooterProps {}
 
 export default function Footer(props: FooterProps) {
   return (
-    <div className="container mx-auto px-4 border-t border-gray-300">
+    <div className="container mx-auto px-4 border-t border-gray-300 mt-10">
       <div className="flex flex-col justify-center items-center sm:flex-row text-green-600 font-extralight py-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
