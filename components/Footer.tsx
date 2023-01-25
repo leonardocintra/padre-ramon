@@ -2,8 +2,8 @@ interface FooterProps {}
 
 export default function Footer(props: FooterProps) {
   return (
-    <div className="container mx-auto px-4 border-t border-gray-300 mt-8 flex items-center justify-center">
-      <div className="flex text-green-600 font-extralight py-6">
+    <div className="container mx-auto px-4 border-t border-gray-300">
+      <div className="flex flex-col justify-center items-center sm:flex-row text-green-600 font-extralight py-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -19,7 +19,9 @@ export default function Footer(props: FooterProps) {
           />
         </svg>
         &nbsp; Desenvolvido por
-        <span className="font-light">&nbsp; Leonardo Nascimento Cintra</span>&nbsp; - 2023     </div>
+        <span className="font-light hover:font-bold">&nbsp; Leonardo Nascimento Cintra</span>
+        &nbsp; - 2023
+      </div>
     </div>
   );
 }
