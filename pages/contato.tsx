@@ -99,19 +99,6 @@ export default function Contato() {
               <div className="col-span-2 lg:col-span-1">
                 <div className=" relative ">
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
-                    placeholder="E-mail"
-                  />
-                </div>
-              </div>
-              <div className="col-span-2">
-                <label className="text-gray-700" htmlFor="name">
-                  <input
                     type="text"
                     id="telefone"
                     name="telefone"
@@ -120,10 +107,23 @@ export default function Contato() {
                     className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
                     placeholder="Telefone / Whatsapp"
                   />
+                </div>
+              </div>
+              <div className="col-span-2">
+                <label className="text-gray-700" htmlFor="email">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
+                    placeholder="E-mail"
+                  />
                 </label>
               </div>
               <div className="col-span-2">
-                <label className="text-gray-700" htmlFor="name">
+                <label className="text-gray-700" htmlFor="mensagem">
                   <textarea
                     className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent focus:bg-orange-50"
                     id="mensagem"
