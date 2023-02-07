@@ -23,7 +23,7 @@ export default function QuadroPost(props: QuadroPostProps) {
                 Padre Ramón era um dos Catequistas Responsáveis do Brasil, do
                 Caminho Neocatecumenal, que doou sua vida a evangelização da
                 palavra de Cristo. Fez sua Páscoa no dia 05 de janeiro de 1996,
-                após um acidente automobilístico, na cidade de Ituverava, em São
+                após um acidente automobilístico, na cidade de Igarapava, em São
                 Paulo.
               </p>
               <p className="mb-4">
