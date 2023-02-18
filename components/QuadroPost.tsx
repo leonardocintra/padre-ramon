@@ -8,13 +8,13 @@ interface QuadroPostProps {}
 export default function QuadroPost(props: QuadroPostProps) {
   return (
     <div>
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col-reverse lg:flex-row">
           <div className="mt-5 lg:pr-10">
             <div className="text-sm text-gray-400 font-medium uppercase">
               Causa de Beatificação
             </div>
-            <div className="text-2xl text-gray-600 mt-2">
+            <div className="text-3xl text-gray-600 mt-2">
               Padre Ramón Sevillano Valencia
             </div>
             <div className="text-sm font-medium">Descrição da causa</div>

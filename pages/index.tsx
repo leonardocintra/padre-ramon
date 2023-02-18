@@ -19,10 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <Cabecalho
-          titulo="Padre Ramón Sevillano Valencia"
-          subTitulo="31/08/1943 - 05/01/1996"
-        />
+        <Cabecalho />
         <QuadroPost></QuadroPost>
 
         <QuadroFotos></QuadroFotos>
