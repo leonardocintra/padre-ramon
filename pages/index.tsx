@@ -7,7 +7,7 @@ import Desativado from "./desativado";
 export default function Home() {
   return (
     <>
-      {/* <CardFotos></CardFotos>
+      <CardFotos></CardFotos>
 
       <h3 className="text-center text-5xl font-mono">Biografia</h3>
 
@@ -15,9 +15,7 @@ export default function Home() {
 
       <QuadroFotos></QuadroFotos>
 
-      <QuadroVideo></QuadroVideo> */}
-
-      <Desativado />
+      <QuadroVideo></QuadroVideo>
     </>
   );
 }
