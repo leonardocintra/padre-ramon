@@ -1,39 +1,34 @@
+import Image from "next/image";
+import iconeRamon from "../public/img/editada/ramon-rosto.jpeg";
+
 export default function Desativado() {
   return (
-    <div className="bg-yellow-50 h-screen">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-6 shadow-2xl rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 m-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1024 1024"
-            className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2"
-            aria-hidden="true"
-          >
-            <circle
-              cx="512"
-              cy="512"
-              r="512"
-              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-              fillOpacity={0.7}
-            />
-            <defs>
-              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                <stop stopColor="#7775D6"></stop>
-                <stop offset="1" stopColor="#E935C1"></stop>
-              </radialGradient>
-            </defs>
-          </svg>
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h4 className="text-2xs text-white">Causa de beatificação</h4>
-            <h2 className="text-4xl font-bold tracking-tight text-white">
-              Pe. Ramón Sevillano Valencia
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Voltamos em breve ...
-            </p>
+    <section className="text-gray-600 body-font h-auto">
+      <div className="container px-5 py-24 mx-auto flex flex-col">
+        <div className="lg:w-4/6 mx-auto">
+          <div className="flex flex-col sm:flex-row mt-10">
+            <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+              <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                <Image
+                  src={iconeRamon}
+                  alt="icone padre ramon"
+                  className="rounded-full mx-auto"
+                ></Image>
+              </div>
+              <div className="flex flex-col items-center text-center justify-center">
+                <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                  Padre Ramon
+                </h2>
+              </div>
+            </div>
+            <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <p className="leading-relaxed text-lg mb-4">
+                Site desativado para atualizações. Voltaremos em breve :D
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
