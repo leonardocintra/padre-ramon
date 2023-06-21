@@ -1,4 +1,3 @@
-import "swiper/css";
 import FotoPadreRamon1 from "public/img/canva/1.png";
 import FotoPadreRamon2 from "public/img/canva/2.png";
 import FotoPadreRamon3 from "public/img/canva/3.png";
