@@ -17,53 +17,114 @@ export default function QuadroPost(props: QuadroPostProps) {
               Padre Ramón Sevillano Valencia
             </div>
             <div className="text-sm font-medium">Descrição da causa</div>
-            <div className="text-base text-gray-900 font-medium mt-4">
-              <p className="mb-4">
-                Padre Ramón era um dos Catequistas Responsáveis do Brasil, do
-                Caminho Neocatecumenal, que doou sua vida a evangelização da
-                palavra de Cristo. Fez sua Páscoa no dia 05 de janeiro de 1996,
-                após um acidente automobilístico, na cidade de Igarapava, em São
-                Paulo.
+            <div className="text-gray-800 font-light mt-4 space-y-4 text-justify">
+              <p className="">
+                O Pe. Ramón Sevillano Valencia, filho de Alfonso e Rosario,
+                nasceu em Cirauqui (Navarra) no dia 31 de agosto de 1943.
               </p>
-              <p className="mb-4">
-                Nascido em Cirauqui (Navarra), na Espanha, no dia 31 de agosto
-                de 1943, onde sempre teve uma vida de estudo dentro de sua
-                missão como presbítero. Seus formadores religiosos testemunhavam
-                a pessoa distinta que era, dotada de bom humor, além de
-                representar um cristão exemplar. Fora catecúmeno na Paróquia de
-                Santa Joaquina de Vedruna, em Barcelona, na Espanha.
+              <p>
+                Tendo sentido o chamado a ser presbítero e missionário,
+                ingressou, num primeiro momento, no Aspirantado Salesiano de
+                Girona (Espanha) em 1957. No curso de 1961-62 fez o Noviciado,
+                preparatório para entrar na Congregação Salesiana, em Arbós del
+                Panadés (Espanha) e a primeira Profissão religiosa temporal foi
+                realizada em 16 de agosto de 1962.
               </p>
-              <p className="mb-4">
-                No ano início do ano de 1979, solicitou aos seus superiores a
-                dedicação plena ao apostolado como itinerante do Caminho
-                Neocatecumenal, passando por diversas regiões da Espanha,
-                Portugal e, finalmente, no Brasil. Padre Ramón deteve um
-                importante papel na fundação do Seminário Missionário
-                Arquidiocesano Redemptoris Mater, de Brasília, além de ter
-                auxiliado na catequização de diversas cidades no país,
-                especialmente em São Paulo, Franca e Jundiaí, as quais hoje
-                colhem frutos, configurando importantes pilares do Caminho
-                Neocatecumenal no Brasil.
+              <p>
+                Cursou os dois primeiros anos de Filosofia no Estudiantado de
+                Sant Vicenç dels Horts (Barcelona-Espanha), e o terceiro ano em
+                Sentmenat (Barcelona-Espanha). Após ter feito o Triênio
+                pedagógico de 1965 a 1968, fez a segunda Profissão religiosa
+                temporal em Sentmenat (Barcelona) em 24 de julho de 1965. Foi
+                admitido pelo Conselho local, o qual fez constatar: “é um jovem
+                de bom caráter, sensato e apostólico”. Finalmente, realizou a
+                Profissão Religiosa Perpétua no Templo Expiatório Nacional do
+                Tibidabo (Barcelona-Espanha) no dia 10 de agosto de 1968. O
+                Conselho local achou-o: “De bom critério, piedoso, dócil,
+                trabalhador, entregue; ama e vive a vocação salesiana sacerdotal
+                com ilusão; um pouco tímido”.
               </p>
-              <p className="mb-4">
-                Sempre fora entregue ao Evangelho, com amor e dedicação que
-                demonstrava através de inúmeras palavras de iluminação e
-                carinho, principalmente aos mais necessitados. Padre Ramón quis
-                ser sepultado e enterrado no local em que morresse, sendo o
-                presente vídeo{" "}
-                <span className="font-light">(final da pagina) </span> o
-                testemunho do sinal de comunhão daqueles com quem compartilhou a
-                sua vida.
+              <p>
+                De 1968 até 1972, realizou no Seminário Teológico de
+                Marti-Codolar (Barcelona-Espanha) os estudos teológicos,
+                recebendo a Ordenação Presbiteral na cidade de Pamplona no 19 de
+                agosto de 1972 pelo Bispo Auxiliar Dom Larrauri. Foi sempre,
+                conforme os testemunhos dos seus formadores, uma pessoa
+                excelente, dotado de um bom sentido de humor e um religioso
+                exemplar.
               </p>
-              <p className="mb-4">
-                Símbolo de entrega ao anúncio itinerante do Evangelho, sua
-                presença celeste acompanha distintas graças a diversos irmãos
-                que confiam na sua fama de fé.
+              <p>
+                Já como sacerdote, exerceu o seu ministério como educador nas
+                Escolas Profissionais Salesianas de Sarriá (Distrito de
+                Barcelona-Espanha) e, posteriormente, num bairro, –naquela época
+                caraterizado pela pobreza e a imigração– dedicado pela manhã ao
+                trabalho manual-operário e pela tarde como catequista dos jovens
+                a ele confiados.
               </p>
-              <p className="mb-4">
-                Kiko Argüello, iniciador do Caminho Neocatecumenal, ao expressar
-                acerca de sua morte, reproduziu palavras de ânimo, uma vez que,
-                nos céus, Padre Ramón muito mais fará ao anúncio do Kerygma
+              <p>
+                Em janeiro de 1979, pediu aos superiores salesianos poder-se
+                dedicar plenamente ao apostolado como itinerante do Caminho
+                Neocatecumenal. Naquele momento,
+                <span className="font-medium bg-yellow-300">
+                  {" "}
+                  já formava parte de uma Comunidade Neocatecumenal na Paróquia
+                  de Santa Joaquina de Vedruna em Barcelona (Espanha) à que
+                  esteve sempre muito unido na fé e da qual partiu em missão.{" "}
+                </span>
+                Exerceu a missão itinerante nas regiões de La Mancha,
+                Castilla-León, Astúrias, em Espanha, e também em Portugal,
+                partindo para o Brasil no ano de 1990.
+              </p>
+              <p>
+                Já no Brasil, trabalhou em diversas dioceses sempre como
+                Presbítero Itinerante: Brasília, São Paulo, Franca e Jundiaí.
+                Ajudou a fundar o Seminário Missionário Arquidiocesano
+                «Redemptoris Mater» de Brasília, um dos mais florescentes do
+                Brasil. Profundamente unido com a sua comunidade neocatecumenal
+                de origem,
+                <span className="font-normal bg-orange-200">
+                  Pe. Ramón Sevillano passou os últimos anos de sua vida sem ter
+                  casa nem tempo para si mesmo, sendo um a mais nas famílias que
+                  o acolhiam, sempre disposto a partir para outros lugares,
+                  contatar outras gentes a quem pregar a salvação, o amor de
+                  Deus e sua predileção pelos pecadores. À sua condição de
+                  pessoa entregue ao Evangelho, acrescentam, quantos o
+                  conheceram, sua afabilidade e carinho para com todos os que
+                  tratava. Sempre teve uma palavra de iluminação e de confiança,
+                  sobretudo com os mais débeis, talvez por sentir-se débil
+                  físicamente, mas superava suas limitações com um grande
+                  sentido de humor.
+                </span>
+              </p>
+              <p>
+                O Pe. Ramón sofreu um acidente automobilístico na estrada que
+                vai de Igarapava a Uberaba, na Diocese de Franca (Brasil), no 1º
+                de janeiro de 1996. Após quatro dias de cuidados intensivos no
+                hospital, passou da morte para a Vida, na Vigília da Festa da
+                Epifania na cidade de Uberaba (Minas Gerais).
+              </p>
+              <p>
+                O seu sepultamento celebrou-se em Franca (São Paulo), lugar onde
+                iniciou o seu apostolado no Brasil. Foi presidido pelo então
+                Bispo da Diocese, Dom Diógenes Silva Mathes. Acudiram ao ato
+                mais de quatro mil pessoas de todo o Brasil, em especial das
+                comunidades acompanhadas pelo Pe. Ramón, que carregaram o caixão
+                como sinal de comunhão com aquele que os acompanhou no viver o
+                Evangelho.
+              </p>
+              <p>
+                O jornal local «Diário de Franca» escrevia, naqueles dias, sobre
+                o Pe. Ramón Sevillano:
+                <span className="italic font-medium p-1">
+                  O padre Ramón era muito respeitado dentro da cidade; a sua
+                  simplicidade para se comunicar, a sua serenidade e o seu amor
+                  para com todos eram de todos conhecidas. Cumpriu com grande
+                  entrega a sua missão na terra.
+                </span>
+              </p>
+              <p>
+                Que a sua entrega ao anúncio itinerante do Evangelho nos
+                mantenha a todos em constante peregrinação.
               </p>
             </div>
 
@@ -76,7 +137,19 @@ export default function QuadroPost(props: QuadroPostProps) {
             </div>
           </div>
 
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 space-y-6">
+            <Image
+              src={FotoPadreRamon1}
+              alt="foto do padre"
+              width={450}
+              className="rounded-lg shadow-xl shadow-green-200"
+            />
+            <Image
+              src={FotoPadreRamon1}
+              alt="foto do padre"
+              width={450}
+              className="rounded-lg shadow-xl shadow-green-200"
+            />
             <Image
               src={FotoPadreRamon1}
               alt="foto do padre"
