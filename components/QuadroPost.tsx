@@ -1,5 +1,9 @@
 import Image from "next/image";
 import FotoPadreRamon1 from "public/img/brasilia/1.jpg";
+import FotoPadreRamon10 from "public/img/canva/10.png";
+import FotoPadreRamon11 from "public/img/canva/11.png";
+import FotoPadreRamon12 from "public/img/canva/12.png";
+import FotoPadreRamon13 from "public/img/canva/13.png";
 import ButtonLaranja from "./Button";
 
 interface QuadroPostProps {}
@@ -36,13 +40,18 @@ export default function QuadroPost(props: QuadroPostProps) {
                 Sentmenat (Barcelona-Espanha). Após ter feito o Triênio
                 pedagógico de 1965 a 1968, fez a segunda Profissão religiosa
                 temporal em Sentmenat (Barcelona) em 24 de julho de 1965. Foi
-                admitido pelo Conselho local, o qual fez constatar: “é um jovem
-                de bom caráter, sensato e apostólico”. Finalmente, realizou a
-                Profissão Religiosa Perpétua no Templo Expiatório Nacional do
-                Tibidabo (Barcelona-Espanha) no dia 10 de agosto de 1968. O
-                Conselho local achou-o: “De bom critério, piedoso, dócil,
-                trabalhador, entregue; ama e vive a vocação salesiana sacerdotal
-                com ilusão; um pouco tímido”.
+                admitido pelo Conselho local, o qual fez constatar:{" "}
+                <span className="bg-pink-200 italic">
+                  “é um jovem de bom caráter, sensato e apostólico”.{" "}
+                </span>
+                Finalmente, realizou a Profissão Religiosa Perpétua no Templo
+                Expiatório Nacional do Tibidabo (Barcelona-Espanha) no dia 10 de
+                agosto de 1968. O Conselho local achou-o:{" "}
+                <span className="bg-pink-200 italic">
+                  “De bom critério, piedoso, dócil, trabalhador, entregue; ama e
+                  vive a vocação salesiana sacerdotal com ilusão; um pouco
+                  tímido”.{" "}
+                </span>
               </p>
               <p>
                 De 1968 até 1972, realizou no Seminário Teológico de
@@ -139,19 +148,19 @@ export default function QuadroPost(props: QuadroPostProps) {
 
           <div className="flex-shrink-0 space-y-6">
             <Image
-              src={FotoPadreRamon1}
+              src={FotoPadreRamon13}
               alt="foto do padre"
               width={450}
               className="rounded-lg shadow-xl shadow-green-200"
             />
             <Image
-              src={FotoPadreRamon1}
+              src={FotoPadreRamon10}
               alt="foto do padre"
               width={450}
               className="rounded-lg shadow-xl shadow-green-200"
             />
             <Image
-              src={FotoPadreRamon1}
+              src={FotoPadreRamon12}
               alt="foto do padre"
               width={450}
               className="rounded-lg shadow-xl shadow-green-200"
