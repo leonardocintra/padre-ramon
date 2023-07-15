@@ -2,16 +2,16 @@ import QuadroPost from "../components/QuadroPost";
 import QuadroFotos from "../components/QuadroFotos";
 import QuadroVideo from "../components/QuadroVideo";
 import CardFotos from "../components/CardFotos";
-import Desativado from "./desativado";
+import Manchete from "../components/Manchete";
 
 export default function Home() {
   return (
     <>
-      <CardFotos></CardFotos>
-
-      <h3 className="text-center text-5xl font-mono">Biografia</h3>
+      <Manchete />
 
       <QuadroPost></QuadroPost>
+      
+      <CardFotos></CardFotos>
 
       <QuadroFotos></QuadroFotos>
 

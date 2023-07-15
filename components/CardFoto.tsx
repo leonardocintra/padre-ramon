@@ -9,7 +9,7 @@ interface CardFotoProps {
 export default function CardFoto(props: CardFotoProps) {
   return (
     <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-      <div className="rounded-lg h-64 overflow-hidden shadow-sm shadow-cyan-500">
+      <div className="rounded-lg h-64 overflow-hidden shadow-xl">
         <Image
           src={props.imageUrl}
           alt={props.titulo}

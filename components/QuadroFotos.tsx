@@ -2,15 +2,8 @@ import FotoPadreRamon1 from "public/img/canva/1.png";
 import FotoPadreRamon2 from "public/img/canva/2.png";
 import FotoPadreRamon3 from "public/img/canva/3.png";
 import FotoPadreRamon4 from "public/img/canva/4.png";
-import FotoPadreRamon5 from "public/img/canva/5.png";
-import FotoPadreRamon6 from "public/img/canva/6.png";
 import FotoPadreRamon7 from "public/img/canva/7.png";
-import FotoPadreRamon8 from "public/img/canva/8.png";
 import FotoPadreRamon9 from "public/img/canva/9.png";
-import FotoPadreRamon10 from "public/img/canva/10.png";
-import FotoPadreRamon11 from "public/img/canva/11.png";
-import FotoPadreRamon12 from "public/img/canva/12.png";
-import FotoPadreRamon13 from "public/img/canva/13.png";
 import Image from "next/image";
 
 interface QuadroFotosProps {}
