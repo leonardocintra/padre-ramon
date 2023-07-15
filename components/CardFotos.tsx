@@ -11,14 +11,14 @@ export default function CardFotos() {
             imageUrl="/img/card/salesianos.jpg"
           />
           <CardFoto
-            titulo="Padre Ramon em Brasília"
-            descricao="Padre Ramon acompanhando os iniciadores do Caminho Neocatecumenal em visita a Brasilia"
-            imageUrl="/img/brasilia/1.jpg"
-          />
-          <CardFoto
             titulo="Redemptoris Matter de Brasília"
             descricao="Padre Ramon com iniciadores do caminho Kiko Argüello (biblia) Carmen Hernandez no terreno que é  hoje o Seminário Missionário Redemptoris Matter de Brasilia. Clique na foto para conhecer a história do Seminário"
             imageUrl="/img/brasilia/4.jpg"
+          />
+          <CardFoto
+            titulo="Padre Ramon em Brasília"
+            descricao="Padre Ramon acompanhando os iniciadores do Caminho Neocatecumenal em visita a Brasilia"
+            imageUrl="/img/brasilia/1.jpg"
           />
         </div>
       </div>
