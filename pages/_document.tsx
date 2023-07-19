@@ -6,13 +6,12 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <Head />
-      <body>
+      <body className="bg-slate-50">
         <Cabecalho />
         <Main />
         <NextScript />
-        <div className="fixed bottom-0 left-0 right-0">
-          <Footer />
-        </div>
+
+        <Footer />
       </body>
     </Html>
   );
