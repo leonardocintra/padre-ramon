@@ -65,7 +65,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
                   height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/500x300"
+                  src="/img/arquivo-pessoal/1.jpg"
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
@@ -74,7 +74,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
                   height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/501x301"
+                  src="/img/arquivo-pessoal/2.jpg"
                 />
               </div>
               <div className="md:p-2 p-1 w-full">
@@ -83,7 +83,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
                   height={200}
                   alt="gallery"
                   className="w-full h-full object-cover object-center block"
-                  src="https://dummyimage.com/600x360"
+                  src="/img/arquivo-pessoal/3.jpg"
                 />
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
                   height={200}
                   alt="gallery"
                   className="w-full h-full object-cover object-center block"
-                  src="https://dummyimage.com/601x361"
+                  src="/img/arquivo-pessoal/4.jpg"
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
@@ -103,7 +103,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
                   height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/502x302"
+                  src="/img/arquivo-pessoal/5.jpg"
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
@@ -112,7 +112,7 @@ export default function QuadroFotos(props: QuadroFotosProps) {
                   height={200}
                   alt="gallery"
                   className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/503x303"
+                  src="/img/arquivo-pessoal/6.jpg"
                 />
               </div>
             </div>

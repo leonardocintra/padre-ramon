@@ -1,16 +1,11 @@
 import Image from "next/image";
 import ButtonLaranja from "./Button";
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
 
 interface QuadroPostProps {}
 
 export default function QuadroPost(props: QuadroPostProps) {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-3 sm:px-0">
       <div className="flex flex-col-reverse lg:flex-row">
         <div className="mt-5 lg:pr-10">
           <div className="text-sm text-gray-400 font-medium uppercase">
@@ -25,6 +20,13 @@ export default function QuadroPost(props: QuadroPostProps) {
               O Pe. Ramón Sevillano Valencia, filho de Alfonso e Rosario, nasceu
               em Cirauqui (Navarra) no dia 31 de agosto de 1943.
             </p>
+            <Image
+              width={400}
+              height={400}
+              alt="imagem"
+              className="float-left rounded-lg bg-red-300 m-3 shadow-lg"
+              src={"/img/card/salesianos.jpg"}
+            />
             <p>
               Tendo sentido o chamado a ser presbítero e missionário, ingressou,
               num primeiro momento, no Aspirantado Salesiano de Girona (Espanha)
@@ -63,10 +65,12 @@ export default function QuadroPost(props: QuadroPostProps) {
             <p>
               Já como sacerdote, exerceu o seu ministério como educador nas
               Escolas Profissionais Salesianas de Sarriá (Distrito de
-              Barcelona-Espanha) e, posteriormente, num bairro, –naquela época
-              caraterizado pela pobreza e a imigração– dedicado pela manhã ao
-              trabalho manual-operário e pela tarde como catequista dos jovens a
-              ele confiados.
+              Barcelona-Espanha) e, posteriormente, num bairro, – naquela época
+              caraterizado pela pobreza e a imigração –{" "}
+              <span className="font-normal underline decoration-2 decoration-rose-500">
+                dedicado pela manhã ao trabalho manual-operário e pela tarde
+                como catequista dos jovens a ele confiados.
+              </span>
             </p>
             <p>
               Em janeiro de 1979, pediu aos superiores salesianos poder-se
@@ -82,13 +86,20 @@ export default function QuadroPost(props: QuadroPostProps) {
               Castilla-León, Astúrias, em Espanha, e também em Portugal,
               partindo para o Brasil no ano de 1990.
             </p>
+            <Image
+              width={300}
+              height={200}
+              alt="imagem"
+              className="float-right rounded-lg bg-red-300 m-3 shadow-lg"
+              src={"/img/brasilia/1.jpg"}
+            />
             <p>
               Já no Brasil, trabalhou em diversas dioceses sempre como
               Presbítero Itinerante: Brasília, São Paulo, Franca e Jundiaí.
               Ajudou a fundar o Seminário Missionário Arquidiocesano
-              «Redemptoris Mater» de Brasília, um dos mais florescentes do
-              Brasil. Profundamente unido com a sua comunidade neocatecumenal de
-              origem,
+              <span className="italic"> Redemptoris Mater </span> de Brasília,
+              um dos mais florescentes do Brasil. Profundamente unido com a sua
+              comunidade neocatecumenal de origem,
               <span className="font-normal bg-orange-200">
                 Pe. Ramón Sevillano passou os últimos anos de sua vida sem ter
                 casa nem tempo para si mesmo, sendo um a mais nas famílias que o
