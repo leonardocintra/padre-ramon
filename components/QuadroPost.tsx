@@ -132,10 +132,10 @@ export default function QuadroPost(props: QuadroPostProps) {
               O jornal local «Diário de Franca» escrevia, naqueles dias, sobre o
               Pe. Ramón Sevillano:
               <span className="italic font-medium p-1">
-                O padre Ramón era muito respeitado dentro da cidade; a sua
-                simplicidade para se comunicar, a sua serenidade e o seu amor
-                para com todos eram de todos conhecidas. Cumpriu com grande
-                entrega a sua missão na terra.
+                O padre Ramón era muito respeitado dentro da cidade; era
+                conhecimento de todos a sua simplicidade para se comunicar, sua
+                serenidade e o seu amor. Cumpriu com grande entrega a sua
+                missão na terra.
               </span>
             </p>
             <p>
