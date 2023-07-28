@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ButtonLaranja from "./Button";
+import CardFoto from "./CardFoto";
 
 interface QuadroFotosProps {}
 
@@ -55,69 +56,59 @@ export default function QuadroFotos(props: QuadroFotosProps) {
             </p>
           </div>
         </div>
-
-        <div className="container px-5 py-10 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap md:-m-2 -m-1">
-            <div className="flex flex-wrap w-1/2">
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  width={200}
-                  height={200}
-                  alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="/img/arquivo-pessoal/1.jpg"
-                />
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  width={200}
-                  height={200}
-                  alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="/img/arquivo-pessoal/2.jpg"
-                />
-              </div>
-              <div className="md:p-2 p-1 w-full">
-                <Image
-                  width={200}
-                  height={200}
-                  alt="gallery"
-                  className="w-full h-full object-cover object-center block"
-                  src="/img/arquivo-pessoal/3.jpg"
-                />
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/2">
-              <div className="md:p-2 p-1 w-full">
-                <Image
-                  width={200}
-                  height={200}
-                  alt="gallery"
-                  className="w-full h-full object-cover object-center block"
-                  src="/img/arquivo-pessoal/4.jpg"
-                />
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  width={200}
-                  height={200}
-                  alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="/img/arquivo-pessoal/5.jpg"
-                />
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  width={200}
-                  height={200}
-                  alt="gallery"
-                  className="w-full object-cover h-full object-center block"
-                  src="/img/arquivo-pessoal/6.jpg"
-                />
-              </div>
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-20 mx-auto">
+            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+              <CardFoto
+                titulo="Na peregrinação para JMJ"
+                descricao="Peregrinação em Loretto de 1995 em frente a fonte Fontana Di Trevi"
+                imageUrl="/img/arquivo-pessoal/pessoal1.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Pe. Ramon com peregrinos"
+                imageUrl="/img/arquivo-pessoal/pessoal2.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Na peregrinação para JMJ"
+                descricao="Pe. Ramon em Palazzo di Poli com dois peregrinos na JMJ 1995"
+                imageUrl="/img/arquivo-pessoal/pessoal3.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Em algum mercado em Roma (Italia) 1995"
+                imageUrl="/img/arquivo-pessoal/pessoal4.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Em frente a catacumba São Calisto em 1995"
+                imageUrl="/img/arquivo-pessoal/pessoal5.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Em frente a catacumba São Calisto em 1995"
+                imageUrl="/img/arquivo-pessoal/pessoal8.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Em frente a catacumba São Calisto em 1995"
+                imageUrl="/img/arquivo-pessoal/pessoal9.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo="Em frente a catacumba São Calisto em 1995"
+                imageUrl="/img/arquivo-pessoal/pessoal10.jpeg"
+                height={92}
+              />
+              <CardFoto
+                titulo=""
+                imageUrl="/img/arquivo-pessoal/pessoal6.jpeg"
+                height={92}
+              />
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
