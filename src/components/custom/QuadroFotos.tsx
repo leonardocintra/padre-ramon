@@ -2,9 +2,7 @@ import Image from "next/image";
 import ButtonLaranja from "./Button";
 import CardFoto from "./CardFoto";
 
-interface QuadroFotosProps {}
-
-export default function QuadroFotos(props: QuadroFotosProps) {
+export default function QuadroFotos() {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">

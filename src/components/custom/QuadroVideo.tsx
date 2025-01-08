@@ -1,6 +1,4 @@
-interface QuadroVideoProps {}
-
-export default function QuadroVideo(props: QuadroVideoProps) {
+export default function QuadroVideo() {
   return (
     <div>
       <div className="container mx-auto px-4 mt-10">

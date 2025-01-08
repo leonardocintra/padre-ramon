@@ -1,9 +1,7 @@
 import Image from "next/image";
 import ButtonLaranja from "./Button";
 
-interface QuadroPostProps {}
-
-export default function QuadroPost(props: QuadroPostProps) {
+export default function QuadroPost() {
   return (
     <div className="container mx-auto px-3 sm:px-0">
       <div className="flex flex-col-reverse lg:flex-row">
@@ -134,8 +132,8 @@ export default function QuadroPost(props: QuadroPostProps) {
               <span className="italic font-medium p-1">
                 O padre Ramón era muito respeitado dentro da cidade; era
                 conhecimento de todos a sua simplicidade para se comunicar, sua
-                serenidade e o seu amor. Cumpriu com grande entrega a sua
-                missão na terra.
+                serenidade e o seu amor. Cumpriu com grande entrega a sua missão
+                na terra.
               </span>
             </p>
             <p>
