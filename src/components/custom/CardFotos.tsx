@@ -20,6 +20,21 @@ export default function CardFotos() {
             descricao="Padre Ramon acompanhando os iniciadores do Caminho Neocatecumenal em visita a Brasilia"
             imageUrl="/img/brasilia/1.jpg"
           />
+          <CardFoto
+            titulo="São João Paulo II"
+            descricao="Padre Ramon com o Santo Papa João Paulo II"
+            imageUrl="/img/canva2/joaopaulo.jpg"
+          />{" "}
+          <CardFoto
+            titulo="Trabalho voluntário"
+            descricao="Também fazia todos os trabalhos voluntários com alegria e dedicação"
+            imageUrl="/img/canva2/porco.jpg"
+          />{" "}
+          <CardFoto
+            titulo="Convivencias"
+            descricao="Participou de grandes convivencia com Kiko Argüello"
+            imageUrl="/img/canva2/kiko.jpg"
+          />
         </div>
       </div>
     </section>
