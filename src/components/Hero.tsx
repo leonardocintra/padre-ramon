@@ -1,13 +1,13 @@
-import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 
 export default function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-      <Image
+      <CldImage
+        src="padre-ramon-principal"
+        alt="Padre Ramon"
         width={500}
         height={500}
-        src={"/img/velorio/padre-ramon1.jpg"}
-        alt={"Padre Ramon"}
         className="w-full md:w-1/2 h-auto object-cover rounded-lg shadow-md"
       />
       <div className="md:w-1/2 text-center md:text-left">

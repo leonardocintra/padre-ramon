@@ -1,4 +1,5 @@
-// app/page.tsx
+"use client";
+
 import Section from "@/components/Section";
 import Hero from "@/components/Hero";
 import {
@@ -20,52 +21,52 @@ export default function Home() {
       <Section
         title="Infância e Vocação"
         text={biographyText}
-        imageUrl="/img/canva2/jovem.jpg"
+        imageId="jovem_vfwb7x"
         imagePosition="left"
       />
 
       <Section
         title="Formação e Primeiros Ministérios"
         text={biographyText2}
-        imageUrl="/img/vocacao/ordenacao.jpg"
+        imageId="3_lorrx2"
         imagePosition="right"
       />
 
       <Section
         title="Missão Itinerante"
         text={biographyText3}
-        imageUrl="/img/vocacao/formacao.jpg"
+        imageId="13_wzayic"
         imagePosition="left"
       />
 
       <Section
         title="Missão no Brasil"
         text={biographyText4}
-        imageUrl="/img/canva/brasilia-fundacao.png"
+        imageId="4_mkmohi"
         imagePosition="right"
       />
       <Section
         title="Caráter e Testemunho"
         text={biographyText5}
-        imageUrl="/img/velorio/padre-ramon1.jpg"
+        imageId="joaopaulo_zlxgpw"
         imagePosition="left"
       />
       <Section
         title="Últimos Dias"
         text={biographyText6}
-        imageUrl="/img/velorio/1.jpg"
+        imageId="1_z7qhcr"
         imagePosition="right"
       />
       <Section
         title="Despedida e Homenagem"
         text={biographyText7}
-        imageUrl="/img/velorio/3.jpg"
+        imageId="3_wcobgp"
         imagePosition="left"
       />
       <Section
         title="Legado"
         text={biographyText8}
-        imageUrl="/img/canva2/cadeira.jpg"
+        imageId="cadeira_jy1iq6"
         imagePosition="right"
       />
     </div>
