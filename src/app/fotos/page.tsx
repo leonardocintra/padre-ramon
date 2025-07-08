@@ -1,5 +1,6 @@
-// app/fotos/page.tsx
-import Image from "next/image";
+"use client";
+
+import { CldImage } from "next-cloudinary";
 
 const photoGroups = [
   {
@@ -8,16 +9,21 @@ const photoGroups = [
       "Participou junto com a equipe do Caminho Neocatecumenal na construção do Seminário Redemptoris Mater de Brasília",
     photos: [
       {
-        src: "/img/redemptoris/equipe-carmem.jpg",
+        src: "2_szjkyk",
         alt: "Padre Ramón criança com a família",
         caption: "Equipe de catequistas do Seminário Redemptoris Mater",
       },
       {
-        src: "/img/redemptoris/equipe.jpg",
+        src: "4_mkmohi",
         alt: "Padre Ramón brincando com amigos",
         caption:
           "Com a equipe do Seminário Redemptoris Mater no terreno que é hoje o Seminario Redemptoris Mater de Brasília",
       },
+      {
+        src: "6_jz3vbw",
+        alt: "Padre Ramón em grupo",
+        caption: "Padre Ramón em grupo durante a construção do seminário.",
+      }
     ],
   },
   {
@@ -25,24 +31,56 @@ const photoGroups = [
     description: "Fases da adolescência e formação religiosa do Padre Ramón.",
     photos: [
       {
-        src: "/img/canva2/1.jpg",
+        src: "formacao_cyryae",
         alt: "Padre Ramón no noviciado",
         caption: "Durante o noviciado em Arbós del Panadés.",
       },
       {
-        src: "/img/canva2/2.jpg",
+        src: "6_axvu1x",
         alt: "Profissão Perpétua",
         caption: "Dia da Profissão Religiosa Perpétua no Tibidabo, 1968.",
       },
       {
-        src: "/img/canva2/5.jpg",
-        alt: "Padre Ramón no noviciado",
-        caption: "Durante o noviciado em Arbós del Panadés.",
+        src: "infancia_ywkl0g",
+        alt: "Padre Ramón criança",
+        caption: "Padre Ramón em sua infância.",
       },
       {
-        src: "/img/canva2/6.jpg",
-        alt: "Profissão Perpétua",
-        caption: "Dia da Profissão Religiosa Perpétua no Tibidabo, 1968.",
+        src: "jovem_vfwb7x",
+        alt: "Padre Ramón jovem",
+        caption: "Padre Ramón em sua juventude.",
+      },
+    ],
+  },
+  {
+    title: "Com Santo Papa João Paulo II",
+    description: "Encontro com o Papa João Paulo II em Roma.",
+    photos: [
+      {
+        src: "joaopaulo_zlxgpw",
+        alt: "Padre Ramón com o Papa João Paulo II",
+        caption: "Durante o encontro com o Papa João Paulo II em Roma.",
+      },
+    ],
+  },
+  {
+    title: "Peregrinações e Missões",
+    description: "Momentos de peregrinação e missões do Padre Ramón.",
+    photos: [
+      {
+        src: "pessoal1_lwc0qv",
+        alt: "Padre Ramón em missão",
+        caption: "Padre Ramón e José Ronaldo",
+      },
+      {
+        src: "pessoal3_oocqar",
+        alt: "Padre Ramón em missão",
+        caption: "Padre Ramón e amigos",
+      },
+      {
+        src: "pessoal2_mn5bzm",
+        alt: "Padre Ramón em missão",
+        caption: "Padre Ramón e amigos",
       },
     ],
   },
@@ -51,14 +89,14 @@ const photoGroups = [
     description: "Momentos de despedida e homenagens após seu falecimento.",
     photos: [
       {
-        src: "/img/velorio/1.jpg",
+        src: "1_z7qhcr",
         alt: "Velório com fiéis",
         caption: "Centenas de pessoas prestam homenagens em Franca - SP.",
       },
       {
-        src: "/img/velorio/3.jpg",
-        alt: "Flores e velas",
-        caption: "Testemunhos de amor e gratidão ao redor de seu corpo.",
+        src: "3_wcobgp",
+        alt: "Santinho",
+        caption: "Santinho do Padre Ramón distribuído durante o velório.",
       },
     ],
   },
@@ -75,7 +113,7 @@ export default function FotosPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {group.photos.map((photo, i) => (
               <figure key={i} className="rounded overflow-hidden">
-                <Image
+                <CldImage
                   src={photo.src}
                   alt={photo.alt}
                   width={600}
