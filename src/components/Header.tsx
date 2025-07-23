@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 export default function Header() {
   return (
     <header className="bg-[#0A3274] text-white py-5 shadow-md">
