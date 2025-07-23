@@ -3,7 +3,7 @@ import React from 'react';
 export default function OracaoPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <div className="container mx-auto px-4 py-8 max-w-md">
+      <div className="container mx-auto px-8 py-8 max-w-md">
         <h1 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
           ORAÇÃO PARA DEVOÇÃO PRIVADA
         </h1>
@@ -31,7 +31,7 @@ export default function OracaoPage() {
           </p>
         </div>
         <div className="text-center">
-          <p className="text-gray-600 leading-relaxed mb-1">Pai Nosso, Ave Maria, Glória.</p>
+          <p className="leading-relaxed mb-1">rezar Pai Nosso, Ave Maria, Glória.</p>
         </div>
       </div>
     </div>

@@ -113,6 +113,19 @@ export default function Contato() {
           </a>
         </div>
       </form>
+
+      <div className="text-center mt-8">
+        <div>
+          <strong>Secretaria da equipe de postulação: </strong>
+          Rua Santos Pereira, n. 788, bairro Cidade Nova, CEP 14.401-130,
+          Franca - SP - Brasil.
+        </div>
+        <div className="mt-2 italic text-slate-700">
+          De acordo com os decretos de Urbano VIII, em nada se pretende impedir
+          o juízo da autoridade da Igreja.
+        </div>
+        <div className="text-slate-900 font-semibold">COM LICENÇA ECLESIÁTICA.</div>
+      </div>
     </div>
   );
 }
