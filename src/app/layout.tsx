@@ -8,8 +8,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Biografia",
-  description: "Site de biografia pessoal",
+  title: "Padre Ramon",
+  description: "Causa de Padre Ramon",
 };
 
 export default function RootLayout({

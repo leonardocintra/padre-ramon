@@ -6,7 +6,7 @@ export default function Header() {
       <nav className="max-w-4xl mx-auto px-6 flex justify-between items-center">
         <Link href="/">
           <h1 className="font-extrabold text-4xl tracking-wide font-sans select-none cursor-pointer">
-            Causa de Padre Ramon
+            Causa Padre Ramon
           </h1>
         </Link>
         <div className="space-x-8 text-sm font-medium font-sans">
