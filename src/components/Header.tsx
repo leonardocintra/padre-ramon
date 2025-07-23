@@ -16,6 +16,12 @@ export default function Header() {
             Fotos
           </Link>
           <Link
+            href="/oracao"
+            className="hover:text-yellow-400 transition-colors duration-300"
+          >
+            Oração
+          </Link>
+          <Link
             href="/contato"
             className="hover:text-yellow-400 transition-colors duration-300"
           >
