@@ -23,9 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} ${merriweather.className} bg-white text-black`}>
+      <body className={`${inter.className} ${merriweather.className} bg-white text-black min-h-screen flex flex-col`}>
         <Header />
-        <main className="max-w-4xl mx-auto px-4 py-8">{children}</main>
+        <main className="max-w-4xl mx-auto px-4 py-8 flex-1">{children}</main>
         <Footer />
       </body>
     </html>

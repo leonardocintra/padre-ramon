@@ -4,10 +4,10 @@ import { CldImage } from "next-cloudinary";
 
 export default function ManutencaoPage() {
   return (
-    <section className="text-gray-600 body-font h-screen flex items-center">
-      <div className="container px-5 py-24 mx-auto flex flex-col">
+    <section className="text-gray-600 body-font py-8">
+      <div className="container px-5 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
-          <div className="flex flex-col sm:flex-row mt-10">
+          <div className="flex flex-col sm:flex-row mt-6">
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
               <div className="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                 <CldImage
