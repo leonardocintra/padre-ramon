@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   // Verifica se está em modo de manutenção
-  const isMaintenanceMode = false;
+  const isMaintenanceMode = true;
 
   // Se não está em manutenção, continua normalmente
   if (!isMaintenanceMode) {
@@ -12,6 +12,11 @@ export function middleware(request: NextRequest) {
 
   // Se já está na página de manutenção, não redireciona novamente
   if (request.nextUrl.pathname === "/manutencao") {
+    return NextResponse.next();
+  }
+
+  // Permite acesso à página de registro de visita mesmo em manutenção
+  if (request.nextUrl.pathname === "/registro-visita") {
     return NextResponse.next();
   }
 
