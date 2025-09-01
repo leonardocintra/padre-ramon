@@ -6,9 +6,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const merriweather = Merriweather({ 
+const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"]
+  weight: ["300", "400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -23,9 +23,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} ${merriweather.className} bg-white text-black min-h-screen flex flex-col`}>
+      <body
+        className={`${inter.className} ${merriweather.className} bg-white text-black min-h-screen flex flex-col`}
+      >
         <Header />
-        <main className="max-w-4xl mx-auto px-4 py-8 flex-1">{children}</main>
+        <main className="max-w-4xl mx-auto px-4 py-8 flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

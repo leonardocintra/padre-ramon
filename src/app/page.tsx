@@ -21,28 +21,28 @@ export default function Home() {
       <Section
         title="Infância e Vocação"
         text={biographyText}
-        imageId="jovem_vfwb7x"
+        imageId="juventude100"
         imagePosition="left"
       />
 
       <Section
         title="Formação e Primeiros Ministérios"
         text={biographyText2}
-        imageId="3_lorrx2"
+        imageId="juventude200"
         imagePosition="right"
       />
 
       <Section
         title="Missão Itinerante"
         text={biographyText3}
-        imageId="13_wzayic"
+        imageId="2_szjkyk"
         imagePosition="left"
       />
 
       <Section
         title="Missão no Brasil"
         text={biographyText4}
-        imageId="4_mkmohi"
+        imageId="brasilia-fundacao_to4kfm"
         imagePosition="right"
       />
       <Section
