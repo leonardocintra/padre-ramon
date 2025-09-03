@@ -1,3 +1,4 @@
+// registro visita
 'use client';
 
 import { useState } from 'react';
