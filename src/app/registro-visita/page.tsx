@@ -26,7 +26,7 @@ export default function RegistroVisitaPage() {
     e.preventDefault();
     setStatus(null);
     try {
-      const res = await fetch("/api/registro-visita", {
+      const res = await fetch("/api/leonardocintra/registro-visita", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, dataHoje }),

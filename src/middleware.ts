@@ -16,7 +16,11 @@ export function middleware(request: NextRequest) {
   }
 
   // Permite acesso à página de registro de visita mesmo em manutenção
-  if (request.nextUrl.pathname === "/registro-visita") {
+  if (
+    request.nextUrl.pathname === "/registro-visita" ||
+    request.nextUrl.pathname === "/terms" ||
+    request.nextUrl.pathname === "/privacity"
+  ) {
     return NextResponse.next();
   }
 
