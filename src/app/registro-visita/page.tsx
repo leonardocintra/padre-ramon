@@ -37,7 +37,7 @@ export default function RegistroVisitaPage() {
           dataVisita: "",
           cidade: "",
           pais: "Brasil",
-          numeroPessoas: "",
+          numeroPessoas: "1",
           mensagem: "",
           email: "",
           whatsapp: "",
@@ -127,7 +127,7 @@ export default function RegistroVisitaPage() {
             onChange={handleChange}
             required
             className="w-full border rounded px-3 py-2"
-            rows={3}
+            rows={4}
           />
         </div>
         <div>
@@ -145,7 +145,7 @@ export default function RegistroVisitaPage() {
         </div>
         <div>
           <label className="block text-sm font-medium mb-1">
-            WhatsApp (opcional)
+            WhatsApp com DDD (opcional)
           </label>
           <input
             type="text"
