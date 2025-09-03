@@ -13,6 +13,7 @@ export default function RegistroVisitaPage() {
     whatsapp: "",
   });
   const [status, setStatus] = useState<null | string>(null);
+  const [isSending, setIsSending] = useState(false);
 
   const dataHoje = new Date().toLocaleDateString("pt-BR");
 
@@ -25,6 +26,7 @@ export default function RegistroVisitaPage() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus(null);
+    setIsSending(true);
     try {
       const res = await fetch("/api/leonardocintra/registro-visita", {
         method: "POST",
@@ -48,6 +50,7 @@ export default function RegistroVisitaPage() {
     } catch {
       setStatus("Erro ao enviar registro.");
     }
+    setIsSending(false);
   }
 
   return (
@@ -158,9 +161,10 @@ export default function RegistroVisitaPage() {
         </div>
         <button
           type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:bg-blue-300"
+          disabled={isSending}
         >
-          Enviar registro
+          {isSending ? "Enviando..." : "Enviar registro"}
         </button>
         {status && (
           <div className="text-center mt-2 text-sm text-green-600">
