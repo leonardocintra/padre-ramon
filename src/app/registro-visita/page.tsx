@@ -1,21 +1,22 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
+import { useState } from 'react';
+import Link from 'next/link';
 
 export default function RegistroVisitaPage() {
   const [form, setForm] = useState({
-    dataVisita: "",
-    cidade: "",
-    pais: "Brasil",
-    numeroPessoas: "",
-    mensagem: "",
-    email: "",
-    whatsapp: "",
+    nome: '',
+    dataVisita: '',
+    cidade: '',
+    pais: 'Brasil',
+    numeroPessoas: '',
+    mensagem: '',
+    email: '',
+    whatsapp: '',
   });
   const [status, setStatus] = useState<string | null>(null);
 
-  const dataHoje = new Date().toLocaleDateString("pt-BR");
+  const dataHoje = new Date().toLocaleDateString('pt-BR');
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -25,29 +26,30 @@ export default function RegistroVisitaPage() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setStatus("Enviando...");
+    setStatus('Enviando...');
     try {
-      const res = await fetch("/api/leonardocintra/registro-visita", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const res = await fetch('/api/leonardocintra/registro-visita', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, dataHoje }),
       });
       if (res.ok) {
-        setStatus("Registro enviado com sucesso!");
+        setStatus('Registro enviado com sucesso!');
         setForm({
-          dataVisita: "",
-          cidade: "",
-          pais: "Brasil",
-          numeroPessoas: "1",
-          mensagem: "",
-          email: "",
-          whatsapp: "",
+          nome: '',
+          dataVisita: '',
+          cidade: '',
+          pais: 'Brasil',
+          numeroPessoas: '1',
+          mensagem: '',
+          email: '',
+          whatsapp: '',
         });
       } else {
-        setStatus("Erro ao enviar registro.");
+        setStatus('Erro ao enviar registro.');
       }
     } catch {
-      setStatus("Ocorreu um erro na comunicação com o servidor.");
+      setStatus('Ocorreu um erro na comunicação com o servidor.');
     }
   }
 
@@ -120,50 +122,50 @@ export default function RegistroVisitaPage() {
           </div>
 
           <div>
-            <label htmlFor="numeroPessoas" className="block text-sm font-medium mb-1 text-gray-700">
-              Número de pessoas na visita
+            <label htmlFor="nome" className="block text-sm font-medium mb-1 text-gray-700">
+              Nome Completo
             </label>
             <input
-              type="number"
-              name="numeroPessoas"
-              id="numeroPessoas"
-              value={form.numeroPessoas}
+              type="text"
+              name="nome"
+              id="nome"
+              value={form.nome}
               onChange={handleChange}
               required
-              min={1}
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Seu nome completo"
             />
           </div>
 
           <div>
-            <label htmlFor="mensagem" className="block text-sm font-medium mb-1 text-gray-700">
-              Mensagem (confidencial)
+            <label htmlFor="email" className="block text-sm font-medium mb-1 text-gray-700">
+              Email (opcional)
             </label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              value={form.mensagem}
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={form.email}
               onChange={handleChange}
-              required
-              rows={5}
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Deixe sua mensagem ou pedido de oração..."
+              placeholder="Seu melhor email"
             />
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-1 text-gray-700">
-                Email (opcional)
+            <div>
+              <label htmlFor="numeroPessoas" className="block text-sm font-medium mb-1 text-gray-700">
+                Número de pessoas na visita
               </label>
               <input
-                type="email"
-                name="email"
-                id="email"
-                value={form.email}
+                type="number"
+                name="numeroPessoas"
+                id="numeroPessoas"
+                value={form.numeroPessoas}
                 onChange={handleChange}
+                required
+                min={1}
                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Seu melhor email"
               />
             </div>
             <div>
@@ -180,6 +182,22 @@ export default function RegistroVisitaPage() {
                 placeholder="(99) 99999-9999"
               />
             </div>
+          </div>
+
+          <div>
+            <label htmlFor="mensagem" className="block text-sm font-medium mb-1 text-gray-700">
+              Mensagem (confidencial)
+            </label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              value={form.mensagem}
+              onChange={handleChange}
+              required
+              rows={5}
+              className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Deixe sua mensagem ou pedido de oração..."
+            />
           </div>
 
           <button
