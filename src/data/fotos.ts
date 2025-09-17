@@ -49,8 +49,8 @@ export const photoGroups = [
         caption: "Equipe de catequistas do Seminário Redemptoris Mater",
       },
       {
-        src: "4_mkmohi",
-        alt: "Padre Ramón brincando com amigos",
+        src: "ordenacao_odk4zp",
+        alt: "Missa no Redemptoris Mater",
         caption:
           "Com a equipe do Seminário Redemptoris Mater no terreno que é hoje o Seminario Redemptoris Mater de Brasília",
       },
