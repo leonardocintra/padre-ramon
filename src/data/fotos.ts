@@ -49,8 +49,8 @@ export const photoGroups = [
         caption: "Equipe de catequistas do Seminário Redemptoris Mater",
       },
       {
-        src: "ordenacao_odk4zp",
-        alt: "Missa no Redemptoris Mater",
+        src: "brasilia-fundacao_to4kfm",
+        alt: "terreno",
         caption:
           "Com a equipe do Seminário Redemptoris Mater no terreno que é hoje o Seminario Redemptoris Mater de Brasília",
       },
@@ -82,14 +82,9 @@ export const photoGroups = [
     description: "Comunidade e formação no Caminho Neocatecumenal.",
     photos: [
       {
-        src: "joaopaulo2-200",
-        alt: "Padre Ramón em missão",
-        caption: "Papa João Paulo II com Padre Ramón.",
-      },
-      {
-        src: "joaopaulo2-100",
-        alt: "Padre Ramón em missão",
-        caption: "Papa João Paulo II com Padre Ramón.",
+        src: "ordenacao_odk4zp",
+        alt: "caminho1",
+        caption: "Celebração Eucarística",
       },
     ],
   },
