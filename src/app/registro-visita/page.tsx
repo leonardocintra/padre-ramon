@@ -217,13 +217,13 @@ export default function RegistroVisitaPage() {
         <div className="text-center mt-12 p-6 bg-gray-50 rounded-lg">
           <p className="mb-4 text-gray-800">
             Deseja também enviar um relato do que o Padre Ramon fez em sua vida?
-            Algum milagre ou graça concedida?
+            Alguma graça alcançada ? Clique abaixo e envie seu relato!
           </p>
           <Link 
             href="/registro-graca"
             className="inline-block px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 font-semibold shadow-md transition-transform transform hover:scale-105"
           >
-            Registrar Graça ou Milagre
+            Informar Graça alcançada
           </Link>
         </div>
       </div>

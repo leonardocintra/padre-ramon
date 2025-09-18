@@ -13,7 +13,7 @@ export default function ActionButtons() {
         href="/registro-graca"
         className="inline-block px-4 py-4 bg-yellow-500 text-white rounded hover:bg-yellow-600 text-sm text-center"
       >
-        Enviar Graça / Milagre
+        Informar Graça alcançada
       </Link>
     </div>
   );
