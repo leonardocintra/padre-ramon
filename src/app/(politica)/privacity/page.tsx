@@ -4,7 +4,7 @@ export default function PrivacityPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mb-6">Política de Privacidade</h1>
-      <p className="text-sm text-gray-500 mb-8">Última atualização: [data]</p>
+      <p className="text-sm text-gray-500 mb-8">Última atualização: 17/09/2025 12:59</p>
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold mb-2">

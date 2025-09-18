@@ -2,6 +2,7 @@
 
 import Section from "@/components/Section";
 import Hero from "@/components/Hero";
+import ActionButtons from "@/components/ActionButtons";
 import {
   biographyText,
   biographyText2,
@@ -16,6 +17,7 @@ import {
 export default function Home() {
   return (
     <div className="space-y-12">
+      <ActionButtons />
       <Hero />
 
       <Section
