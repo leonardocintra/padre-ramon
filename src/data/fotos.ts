@@ -135,6 +135,42 @@ export const photoGroups = [
     ],
   },
   {
+    title: "Reliquias",
+    description: "Reliquias de Padre Ramon.",
+    photos: [
+      {
+        src: "reliquia-cruz_hg2r4r",
+        alt: "cruz1",
+        caption: "Cruz recebida do Papa João Paulo II. 'Emprestou' para uma irmã para ajuda - la em um problema grave que ela estava passando",
+      },
+      {
+        src: "reliquia-cruz2_o1i2je",
+        alt: "cruz2",
+        caption: "Cruz de Padre Ramon",
+      },
+      {
+        src: "reliquia-biblia8_msmf4j",
+        alt: "biblia1",
+        caption: "Bíblia de Jerusalem - 1990",
+      },
+      {
+        src: "reliquia-biblia6_w6x8tm",
+        alt: "biblia2",
+        caption: "Bíblia de Jerusalem com as inicias 'RS' - 1990",
+      },
+      {
+        src: "reliquia-biblia4_zotefe",
+        alt: "biblia4",
+        caption: "Bíblia",
+      },
+      {
+        src: "reliquia-biblia5_zl9n2u",
+        alt: "biblia3",
+        caption: "Bíblia",
+      },
+    ]
+  },
+  {
     title: "Velório e Homenagens",
     description: "Momentos de despedida e homenagens após seu falecimento.",
     photos: [

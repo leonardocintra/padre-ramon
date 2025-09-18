@@ -25,7 +25,7 @@ export default function Section({
         />
       )}
       <div className="text-center md:text-left">
-        <h2 className="text-xl font-semibold mb-2 text-[#0A3274]">{title}</h2>
+        <h2 className="text-xl font-semibold mb-2 text-gray-800">{title}</h2>
         <div className="text-justify">{text}</div>
       </div>
       {imagePosition === "right" && (
