@@ -49,8 +49,8 @@ export const photoGroups = [
         caption: "Equipe de catequistas do Seminário Redemptoris Mater",
       },
       {
-        src: "4_mkmohi",
-        alt: "Padre Ramón brincando com amigos",
+        src: "brasilia-fundacao_to4kfm",
+        alt: "terreno",
         caption:
           "Com a equipe do Seminário Redemptoris Mater no terreno que é hoje o Seminario Redemptoris Mater de Brasília",
       },
@@ -82,14 +82,9 @@ export const photoGroups = [
     description: "Comunidade e formação no Caminho Neocatecumenal.",
     photos: [
       {
-        src: "joaopaulo2-200",
-        alt: "Padre Ramón em missão",
-        caption: "Papa João Paulo II com Padre Ramón.",
-      },
-      {
-        src: "joaopaulo2-100",
-        alt: "Padre Ramón em missão",
-        caption: "Papa João Paulo II com Padre Ramón.",
+        src: "ordenacao_odk4zp",
+        alt: "caminho1",
+        caption: "Celebração Eucarística",
       },
     ],
   },
@@ -138,6 +133,42 @@ export const photoGroups = [
         caption: "Padre Ramón e amigos",
       },
     ],
+  },
+  {
+    title: "Reliquias",
+    description: "Reliquias de Padre Ramon.",
+    photos: [
+      {
+        src: "reliquia-cruz_hg2r4r",
+        alt: "cruz1",
+        caption: "Cruz recebida do Papa João Paulo II. 'Emprestou' para uma irmã para ajuda - la em um problema grave que ela estava passando",
+      },
+      {
+        src: "reliquia-cruz2_o1i2je",
+        alt: "cruz2",
+        caption: "Cruz de Padre Ramon",
+      },
+      {
+        src: "reliquia-biblia8_msmf4j",
+        alt: "biblia1",
+        caption: "Bíblia de Jerusalem - 1990",
+      },
+      {
+        src: "reliquia-biblia6_w6x8tm",
+        alt: "biblia2",
+        caption: "Bíblia de Jerusalem com as inicias 'RS' - 1990",
+      },
+      {
+        src: "reliquia-biblia4_zotefe",
+        alt: "biblia4",
+        caption: "Bíblia",
+      },
+      {
+        src: "reliquia-biblia5_zl9n2u",
+        alt: "biblia3",
+        caption: "Bíblia",
+      },
+    ]
   },
   {
     title: "Velório e Homenagens",

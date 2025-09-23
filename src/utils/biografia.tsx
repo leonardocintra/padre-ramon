@@ -1,13 +1,13 @@
-const destaque = "font-extrabold text-dark";
-const semiDestaque = "font-semibold text-slate-700";
-const paragrafo = "indent-5";
+const destaque = "font-bold text-black";
+const semiDestaque = "font-semibold text-gray-700";
+const paragrafo = "text-justify indent-8 leading-relaxed my-4";
 
 export const biographyText = (
   <div className="prose max-w-none text-gray-800 leading-relaxed">
     <p className={paragrafo}>
       O <strong className={destaque}>Pe. Ramón Sevillano Valencia</strong>,
       filho de <span className={semiDestaque}>Alfonso e Rosario</span>, nasceu
-      em <span className="italic text-gray-500 ">Cirauqui (Navarra)</span> no
+      em <em className="text-gray-500">Cirauqui (Navarra)</em> no
       dia <span className={semiDestaque}>31 de agosto de 1943</span>.
     </p>
 
@@ -19,33 +19,32 @@ export const biographyText = (
     </p>
 
     <p className={paragrafo}>
-      No curso de{" "}
-      <span className="font-semibold text-purple-400 ">1961-62</span> fez o{" "}
-      <span className="italic">Noviciado</span>, preparatório para entrar na
+      No curso de <strong className="font-semibold">1961-62</strong> fez o{" "}
+      <em>Noviciado</em>, preparatório para entrar na
       Congregação Salesiana, em{" "}
-      <span className="italic">Arbós del Panadés (Espanha)</span>, e a{" "}
+      <em>Arbós del Panadés (Espanha)</em>, e a{" "}
       <strong>primeira Profissão religiosa temporal</strong> foi realizada em{" "}
       <span className={semiDestaque}>16 de agosto de 1962</span>.
     </p>
 
     <p className={paragrafo}>
       Cursou os dois primeiros anos de Filosofia no Estudiantado de{" "}
-      <span className="italic">Sant Vicenç dels Horts (Barcelona-Espanha)</span>
+      <em>Sant Vicenç dels Horts (Barcelona-Espanha)</em>
       , e o terceiro ano em{" "}
-      <span className="italic">Sentmenat (Barcelona-Espanha)</span>.
+      <em>Sentmenat (Barcelona-Espanha)</em>.
     </p>
 
     <p className={paragrafo}>
       Após ter feito o Triênio pedagógico de{" "}
       <span className="font-semibold">1965 a 1968</span>, fez a segunda
       Profissão religiosa temporal em{" "}
-      <span className="italic">Sentmenat (Barcelona)</span> em{" "}
+      <em>Sentmenat (Barcelona)</em> em{" "}
       <span className={semiDestaque}>24 de julho de 1965</span>.
     </p>
 
     <p className={paragrafo}>
       Foi admitido pelo Conselho local, o qual o descreveu como:{" "}
-      <q className="italic text-gray-500 ">
+      <q className="italic text-gray-500">
         um jovem de bom caráter, sensato e apostólico
       </q>
       .
@@ -53,19 +52,19 @@ export const biographyText = (
 
     <p className={paragrafo}>
       Finalmente, realizou a{" "}
-      <strong className="text-lg text-blue-400 ">
+      <strong className="text-lg">
         Profissão Religiosa Perpétua
       </strong>{" "}
       no{" "}
-      <span className="italic">
+      <em>
         Templo Expiatório Nacional do Tibidabo (Barcelona-Espanha)
-      </span>{" "}
+      </em>{" "}
       no dia <span className={semiDestaque}>10 de agosto de 1968</span>.
     </p>
 
     <p className={paragrafo}>
       O Conselho local o avaliou como:{" "}
-      <q className="italic text-gray-500 ">
+      <q className="italic text-gray-500">
         De bom critério, piedoso, dócil, trabalhador, entregue; ama e vive a
         vocação salesiana sacerdotal com ilusão; um pouco tímido.
       </q>
@@ -76,21 +75,21 @@ export const biographyText = (
 export const biographyText2 = (
   <div className="prose max-w-none text-gray-800 leading-relaxed">
     <p className={paragrafo}>
-      De <span className="font-semibold text-purple-400 ">1968 até 1972</span>,
+      De <strong className="font-semibold">1968 até 1972</strong>,
       realizou no{" "}
-      <span className="italic">
+      <em>
         Seminário Teológico de Marti-Codolar (Barcelona-Espanha)
-      </span>{" "}
+      </em>{" "}
       os estudos teológicos, recebendo a{" "}
-      <strong className="text-blue-400 ">Ordenação Presbiteral</strong> na
+      <strong>Ordenação Presbiteral</strong> na
       cidade de <span className={semiDestaque}>Pamplona</span> no dia{" "}
       <span className={semiDestaque}>19 de agosto de 1972</span> pelo Bispo
-      Auxiliar <span className="italic">Dom Larrauri</span>.
+      Auxiliar <em>Dom Larrauri</em>.
     </p>
 
     <p className={paragrafo}>
       Foi sempre, conforme os testemunhos dos seus formadores, uma{" "}
-      <strong className="font-semibold text-indigo-400 ">
+      <strong>
         pessoa excelente
       </strong>
       , dotado de um <span className={semiDestaque}>bom sentido de humor</span>{" "}
@@ -99,10 +98,10 @@ export const biographyText2 = (
 
     <p className={paragrafo}>
       Já como sacerdote, exerceu o seu ministério como educador nas{" "}
-      <span className="italic">
+      <em>
         Escolas Profissionais Salesianas de Sarriá (Distrito de
         Barcelona-Espanha)
-      </span>{" "}
+      </em>{" "}
       e, posteriormente, num bairro – naquela época caracterizado pela{" "}
       <span className={semiDestaque}>pobreza e imigração</span> – dedicado pela
       manhã ao trabalho manual-operário e pela tarde como catequista dos jovens
@@ -114,10 +113,10 @@ export const biographyText2 = (
 export const biographyText3 = (
   <div className="prose max-w-none text-gray-800  leading-relaxed">
     <p className={paragrafo}>
-      Em <span className="font-semibold text-purple-400 ">janeiro de 1979</span>
+      Em <strong className="font-semibold">janeiro de 1979</strong>
       , pediu aos superiores salesianos poder-se dedicar plenamente ao
       apostolado como{" "}
-      <strong className="text-slate-700 ">
+      <strong className="text-slate-700">
         itinerante do Caminho Neocatecumenal
       </strong>
       .
@@ -125,9 +124,9 @@ export const biographyText3 = (
 
     <p className={paragrafo}>
       Naquele momento, já formava parte de uma{" "}
-      <span className="italic text-indigo-400 ">Comunidade Neocatecumenal</span>{" "}
-      na Paróquia de <span className="italic">Santa Joaquina de Vedruna</span>{" "}
-      em <span className="italic">Barcelona (Espanha)</span>, à qual esteve
+      <em>Comunidade Neocatecumenal</em>{" "}
+      na Paróquia de <em>Santa Joaquina de Vedruna</em>{" "}
+      em <em>Barcelona (Espanha)</em>, à qual esteve
       sempre muito unido na fé e da qual partiu em missão.
     </p>
 
@@ -136,8 +135,8 @@ export const biographyText3 = (
       <span className={semiDestaque}>La Mancha, Castilla-León, Astúrias</span>,
       em Espanha, e também em <span className={semiDestaque}>Portugal</span>,
       partindo para o{" "}
-      <span className="font-semibold text-blue-400 ">Brasil</span> no ano de{" "}
-      <span className="font-semibold text-purple-400 ">1990</span>.
+      <strong className="font-semibold">Brasil</strong> no ano de{" "}
+      <strong className="font-semibold">1990</strong>.
     </p>
   </div>
 );
@@ -145,9 +144,9 @@ export const biographyText3 = (
 export const biographyText4 = (
   <div className="prose max-w-none text-gray-800  leading-relaxed">
     <p className={paragrafo}>
-      Já no <span className="font-semibold text-blue-400 ">Brasil</span>,
+      Já no <strong className="font-semibold">Brasil</strong>,
       trabalhou em diversas dioceses sempre como{" "}
-      <strong className="text-slate-700 ">Presbítero Itinerante</strong>:{" "}
+      <strong className="text-slate-700">Presbítero Itinerante</strong>:{" "}
       <span className={semiDestaque}>
         Brasília, São Paulo, Franca e Jundiaí
       </span>
@@ -156,7 +155,7 @@ export const biographyText4 = (
 
     <p className={paragrafo}>
       Ajudou a fundar o{" "}
-      <strong className="text-purple-400 ">
+      <strong>
         Seminário Missionário Arquidiocesano Redemptoris Mater de Brasília
       </strong>
       , um dos mais florescentes do Brasil.
@@ -164,13 +163,13 @@ export const biographyText4 = (
 
     <p className={paragrafo}>
       Profundamente unido com a sua comunidade neocatecumenal de origem,{" "}
-      <strong className="font-extrabold text-indigo-400 ">
+      <strong className="font-extrabold">
         Pe. Ramón Sevillano
       </strong>{" "}
       passou os últimos anos de sua vida{" "}
-      <span className="italic text-gray-600 ">
+      <em className="text-gray-600">
         sem ter casa nem tempo para si mesmo
-      </span>
+      </em>
       , sendo um a mais nas famílias que o acolhiam, sempre disposto a partir
       para outros lugares, contatar outras gentes a quem pregar a{" "}
       <span className={semiDestaque}>
@@ -185,23 +184,23 @@ export const biographyText5 = (
   <div className="prose max-w-none text-gray-800  leading-relaxed">
     <p className={paragrafo}>
       À sua condição de pessoa{" "}
-      <strong className="text-slate-700 ">entregue ao Evangelho</strong>,
+      <strong className="text-slate-700">entregue ao Evangelho</strong>,
       acrescentam, quantos o conheceram, sua{" "}
-      <span className="font-semibold text-indigo-400 ">
+      <strong className="font-semibold">
         afabilidade e carinho
-      </span>{" "}
+      </strong>{" "}
       para com todos os que tratava.
     </p>
 
     <p className={paragrafo}>
       Sempre teve uma palavra de{" "}
-      <span className="font-semibold text-purple-400 ">
+      <strong className="font-semibold">
         iluminação e de confiança
-      </span>
+      </strong>
       , sobretudo com os mais débeis, talvez por sentir-se{" "}
-      <span className="italic text-gray-600 ">débil físicamente</span>, mas
+      <em className="text-gray-600">débil físicamente</em>, mas
       superava suas limitações com um{" "}
-      <strong className="text-slate-700 ">grande sentido de humor</strong>.
+      <strong className="text-slate-700">grande sentido de humor</strong>.
     </p>
   </div>
 );
@@ -209,21 +208,21 @@ export const biographyText5 = (
 export const biographyText6 = (
   <div className="prose max-w-none text-gray-800  leading-relaxed">
     <p className={paragrafo}>
-      O <strong className="text-indigo-400 ">Pe. Ramón</strong> sofreu um{" "}
+      O <strong>Pe. Ramón</strong> sofreu um{" "}
       <span className={semiDestaque}>acidente automobilístico</span> na estrada
-      que vai de <span className="italic">Igarapava a Uberaba</span>, na{" "}
-      <span className="italic">Diocese de Franca (Brasil)</span>, no{" "}
-      <span className="font-semibold text-purple-400 ">
+      que vai de <em>Igarapava a Uberaba</em>, na{" "}
+      <em>Diocese de Franca (Brasil)</em>, no{" "}
+      <strong className="font-semibold">
         1º de janeiro de 1996
-      </span>
+      </strong>
       .
     </p>
 
     <p className={paragrafo}>
       Após quatro dias de cuidados intensivos no hospital, passou da{" "}
-      <strong className="text-slate-700 ">morte para a Vida</strong>, na Vigília
+      <strong className="text-slate-700">morte para a Vida</strong>, na Vigília
       da Festa da Epifania na cidade de{" "}
-      <span className="italic">Uberaba (Minas Gerais)</span>.
+      <em>Uberaba (Minas Gerais)</em>.
     </p>
   </div>
 );
@@ -231,14 +230,14 @@ export const biographyText6 = (
 export const biographyText7 = (
   <div className="prose max-w-none text-gray-800  leading-relaxed">
     <p className={paragrafo}>
-      O seu <strong className="text-purple-400 ">sepultamento</strong>{" "}
-      celebrou-se em <span className="italic">Franca (São Paulo)</span>, lugar
+      O seu <strong>sepultamento</strong>{" "}
+      celebrou-se em <em>Franca (São Paulo)</em>, lugar
       onde iniciou o seu apostolado no Brasil.
     </p>
 
     <p className={paragrafo}>
       Foi presidido pelo então Bispo da Diocese,{" "}
-      <span className="italic text-indigo-400 ">Dom Diógenes Silva Mathes</span>
+      <em>Dom Diógenes Silva Mathes</em>
       .
     </p>
 
@@ -246,7 +245,7 @@ export const biographyText7 = (
       Acudiram ao ato mais de{" "}
       <span className={semiDestaque}>quatro mil pessoas</span> de todo o Brasil,
       em especial das comunidades acompanhadas pelo{" "}
-      <strong className="text-blue-400 ">Pe. Ramón</strong>, que carregaram o
+      <strong>Pe. Ramón</strong>, que carregaram o
       caixão como sinal de comunhão com aquele que os acompanhou no viver o
       Evangelho.
     </p>
@@ -256,12 +255,12 @@ export const biographyText7 = (
 export const biographyText8 = (
   <div className="prose max-w-none text-gray-800  leading-relaxed">
     <p className={paragrafo}>
-      O jornal local <q className="italic text-indigo-400 ">Diário de Franca</q>{" "}
+      O jornal local <q className="italic">Diário de Franca</q>{" "}
       escrevia, naqueles dias, sobre o{" "}
-      <strong className="text-blue-400 ">Pe. Ramón Sevillano</strong>:
+      <strong>Pe. Ramón Sevillano</strong>:
     </p>
 
-    <blockquote className="border-l-4 border-indigo-300  pl-4 italic text-gray-600 ">
+    <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600">
       O padre Ramón era muito respeitado dentro da cidade; era conhecimento de
       todos a sua <strong>simplicidade para se comunicar</strong>, sua
       serenidade e o seu amor.
