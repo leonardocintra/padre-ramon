@@ -1,6 +1,8 @@
 "use client";
 
+import ActionButtons from "@/components/ActionButtons";
 import { CldImage } from "next-cloudinary";
+import Link from "next/link";
 
 export default function ManutencaoPage() {
   return (
@@ -26,21 +28,27 @@ export default function ManutencaoPage() {
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
               <p className="leading-relaxed text-lg mb-4">
-                Site desativado para atualizações. Voltaremos em breve :D
+                Aguardem a divulgação oficial da nova data de lançamento do
+                site!
               </p>
+              <div className="flex flex-col items-center text-center justify-center space-y-5">
+                <div className="my-4 text-indigo-800 font-semibold">
+                  Divulgação prevista para ocorrer no Tempo do Advento!
+                </div>
 
-              {/* Animação de loading */}
-              <div className="flex justify-center sm:justify-start items-center mb-6">
-                <div className="flex space-x-1">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                  <div
-                    className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-                    style={{ animationDelay: "0.1s" }}
-                  ></div>
-                  <div
-                    className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-                    style={{ animationDelay: "0.2s" }}
-                  ></div>
+                {/* Animação de loading */}
+                <div className="flex justify-center sm:justify-start items-center mb-6">
+                  <div className="flex space-x-1">
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                    <div
+                      className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.1s" }}
+                    ></div>
+                    <div
+                      className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.2s" }}
+                    ></div>
+                  </div>
                 </div>
               </div>
 
@@ -48,24 +56,25 @@ export default function ManutencaoPage() {
               <div className="text-sm text-gray-500">
                 <p className="mb-2">Dúvidas? Entre em contato:</p>
                 <div className="flex justify-center sm:justify-start space-x-4">
-                  <a
+                  <Link
                     href="mailto:causadepadreramon@gmail.com"
                     className="text-blue-600 hover:text-blue-800 transition-colors"
                   >
                     📧 Email
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://wa.me/5516991961997"
                     className="text-green-600 hover:text-green-800 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     📱 WhatsApp
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
+          <ActionButtons />
         </div>
       </div>
     </section>
