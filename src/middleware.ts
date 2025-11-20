@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   // Verifica se está em modo de manutenção
-  const isMaintenanceMode = true;
+  const isMaintenanceMode = false;
 
   // Se não está em manutenção, continua normalmente
   if (!isMaintenanceMode) {
