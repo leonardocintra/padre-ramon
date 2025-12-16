@@ -65,7 +65,7 @@ export default function MassInvite() {
               dezenove e trinta (19:30h) horas
             </strong>
             ,<br />
-            na{" "}
+            em <span className="font-semibold text-stone-800"> Franca - SP </span> na{" "}
             <strong className="font-semibold text-stone-800">
               Igreja Sé Catedral Nossa Senhora da Conceição
             </strong>
