@@ -14,9 +14,12 @@ import {
   biographyText8,
 } from "@/utils/biografia";
 
+import MassInvite from "@/components/MassInvite";
+
 export default function Home() {
   return (
     <div className="space-y-12">
+      <MassInvite />
       <ActionButtons />
       <Hero />
 
