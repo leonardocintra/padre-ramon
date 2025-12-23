@@ -44,6 +44,11 @@ export const photoGroups = [
       "Participou junto com a equipe do Caminho Neocatecumenal na construção do Seminário Redemptoris Mater de Brasília",
     photos: [
       {
+        src: "brasilia_ciy0un",
+        alt: "Construção do Seminário",
+        caption: "Padre Ramón no inicio da construção do Seminário.",
+      },
+      {
         src: "2_szjkyk",
         alt: "Padre Ramón criança com a família",
         caption: "Equipe de catequistas do Seminário Redemptoris Mater",
@@ -82,10 +87,20 @@ export const photoGroups = [
     description: "Comunidade e formação no Caminho Neocatecumenal.",
     photos: [
       {
-        src: "ordenacao_odk4zp",
-        alt: "caminho1",
-        caption: "Celebração Eucarística",
+        src: "eucaristia1_jcr0x1",
+        alt: "Eucaristia",
+        caption: "Celebrando a Eucaristia",
       },
+      {
+        src: "kiko_u6x94n",
+        alt: "kiko1",
+        caption: "Da direita para a esquerda: Padre Ramón, Kiko Argüello e Carmen Hernández.",
+      },
+      {
+        src: "carmem_tpwtwj",
+        alt: "carmem1",
+        caption: "Com Carmem Hernández. (Foto restaurada)",
+      }
     ],
   },
   {
@@ -132,6 +147,16 @@ export const photoGroups = [
         alt: "Padre Ramón em missão",
         caption: "Padre Ramón e amigos",
       },
+      {
+        src: "cataratas_rmcrzx",
+        alt: "Cataratas do Iguaçu",
+        caption: "Julho de 1991 - Cataratas do Iguaçu - Brasil",
+      },
+      {
+        src: "cataratas2_p0nftj",
+        alt: "Cataratas do Iguaçu",
+        caption: "1991 - Cataratas do Iguaçu - Brasil",
+      },
     ],
   },
   {
@@ -141,7 +166,8 @@ export const photoGroups = [
       {
         src: "reliquia-cruz_hg2r4r",
         alt: "cruz1",
-        caption: "Cruz recebida do Papa João Paulo II. 'Emprestou' para uma irmã para ajuda - la em um problema grave que ela estava passando",
+        caption:
+          "Cruz recebida do Papa João Paulo II. 'Emprestou' para uma irmã para ajuda - la em um problema grave que ela estava passando",
       },
       {
         src: "reliquia-cruz2_o1i2je",
@@ -168,7 +194,7 @@ export const photoGroups = [
         alt: "biblia3",
         caption: "Bíblia",
       },
-    ]
+    ],
   },
   {
     title: "Velório e Homenagens",
