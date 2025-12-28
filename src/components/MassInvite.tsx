@@ -33,7 +33,7 @@ export default function MassInvite() {
         <h2
           className={`${merriweather.className} text-3xl md:text-4xl font-bold text-stone-700 mb-8 tracking-wide`}
         >
-          Comunicado
+          Informação
         </h2>
 
         <div className="mx-auto max-w-2xl text-base md:text-lg leading-relaxed text-stone-600 font-light space-y-6">
@@ -65,9 +65,14 @@ export default function MassInvite() {
               dezenove e trinta (19:30h) horas
             </strong>
             ,<br />
-            em <span className="font-semibold text-stone-800"> Franca - SP </span> na{" "}
+            em{" "}
+            <span className="font-semibold text-stone-800">
+              {" "}
+              Franca - SP{" "}
+            </span>{" "}
+            na{" "}
             <strong className="font-semibold text-stone-800">
-              Igreja Sé Catedral Nossa Senhora da Conceição
+              Sé Catedral Nossa Senhora da Imaculada Conceição
             </strong>
             .
           </p>
