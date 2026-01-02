@@ -36,6 +36,21 @@ export const photoGroups = [
         caption:
           "1975 - Josep, José, Cristóbal López (hoje Cardeal Arcebispo de Rabat - Marrocos), Domingo, Padre Ramón e Antonio.",
       },
+      {
+        src: "barco_nrlbj4",
+        alt: "Padre Ramón barco",
+        caption: "Passeio",
+      },
+      {
+        src: "barco_nrlbj4",
+        alt: "Padre Ramón barco",
+        caption: "Passeio",
+      },
+      {
+        src: "pescador_dikomz",
+        alt: "Padre Ramón barco",
+        caption: "Pescador",
+      },
     ],
   },
   {
@@ -63,11 +78,6 @@ export const photoGroups = [
         src: "6_jz3vbw",
         alt: "Padre Ramón em grupo",
         caption: "Padre Ramón em grupo durante a construção do seminário.",
-      },
-      {
-        src: "barco_nrlbj4",
-        alt: "Padre Ramón barco",
-        caption: "Passeio",
       },
     ],
   },
