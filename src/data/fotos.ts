@@ -64,6 +64,11 @@ export const photoGroups = [
         alt: "Padre Ramón em grupo",
         caption: "Padre Ramón em grupo durante a construção do seminário.",
       },
+      {
+        src: "barco_nrlbj4",
+        alt: "Padre Ramón barco",
+        caption: "Passeio",
+      },
     ],
   },
   {
@@ -156,6 +161,16 @@ export const photoGroups = [
         src: "cataratas2_p0nftj",
         alt: "Cataratas do Iguaçu",
         caption: "1991 - Cataratas do Iguaçu - Brasil",
+      },
+      {
+        src: "ramon-familia1_iepwdt",
+        alt: "Familia1",
+        caption: "(foto restaurada)",
+      },
+      {
+        src: "familia-2_zejetc",
+        alt: "Familia1",
+        caption: "(foto restaurada)",
       },
     ],
   },
