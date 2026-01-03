@@ -42,11 +42,6 @@ export const photoGroups = [
         caption: "Passeio",
       },
       {
-        src: "barco_nrlbj4",
-        alt: "Padre Ramón barco",
-        caption: "Passeio",
-      },
-      {
         src: "pescador_dikomz",
         alt: "Padre Ramón barco",
         caption: "Pescador",
