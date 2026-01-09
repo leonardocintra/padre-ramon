@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { JSX, useState } from "react";
+import { CldImage } from "next-cloudinary";
 
 interface Versiculo {
   livro: string;
@@ -127,14 +127,14 @@ export default function NotFound(): JSX.Element {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen bg-linear-to-b from-blue-50 to-white flex flex-col items-center justify-center px-4">
       <div className="max-w-2xl mx-auto text-center">
         {/* Imagem Central */}
         <div className="mb-8 flex justify-center">
           <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-2xl border-4 border-blue-800">
-            <Image
-              src="/padre-ramon.jpg"
-              alt="Padre Ramón"
+            <CldImage
+              src="padre-ramon-principal"
+              alt="Padre Ramon"
               fill
               className="object-cover"
               priority
