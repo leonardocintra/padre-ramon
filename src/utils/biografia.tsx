@@ -275,12 +275,12 @@ export const biographyText8 = (
 export const biographyText9 = (
   <div className="prose max-w-none text-gray-800 leading-relaxed">
     <p className={paragrafo}>
-      Em <strong className="font-semibold">janeiro de 2026</strong>, trinta anos
-      após o falecimento do{" "}
-      <strong className={destaque}>Pe. Ramón Sevillano</strong>, a{" "}
-      <span className={semiDestaque}>Diocese de Franca</span> deu início aos
-      primeiros passos do{" "}
-      <strong className="text-slate-700">processo de beatificação</strong>.
+      Em <strong className="font-semibold">novembro de 2025</strong>, foi
+      solicitado à Cúria Diocesana de Franca o pedido de abertura do{" "}
+      <strong className="text-slate-700">processo de beatificação</strong> do{" "}
+      <strong className={destaque}>Pe. Ramón Sevillano</strong>. Em{" "}
+      <strong className="font-semibold">janeiro de 2026</strong>, celebramos os{" "}
+      <span className={semiDestaque}>30 anos de seu falecimento</span>.
     </p>
 
     <p className={paragrafo}>
