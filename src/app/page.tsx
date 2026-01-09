@@ -12,6 +12,7 @@ import {
   biographyText6,
   biographyText7,
   biographyText8,
+  biographyText9,
 } from "@/utils/biografia";
 
 import MassInvite from "@/components/MassInvite";
@@ -26,53 +27,59 @@ export default function Home() {
       <Section
         title="Infância e Vocação"
         text={biographyText}
-        imageId="juventude100"
+        imageIds={["juventude100"]}
         imagePosition="left"
       />
 
       <Section
         title="Formação e Primeiros Ministérios"
         text={biographyText2}
-        imageId="juventude200"
+        imageIds={["juventude200"]}
         imagePosition="right"
       />
 
       <Section
         title="Missão Itinerante"
         text={biographyText3}
-        imageId="2_szjkyk"
+        imageIds={["2_szjkyk"]}
         imagePosition="left"
       />
 
       <Section
         title="Missão no Brasil"
         text={biographyText4}
-        imageId="brasilia-fundacao_to4kfm"
+        imageIds={["brasilia-fundacao_to4kfm"]}
         imagePosition="right"
       />
       <Section
         title="Caráter e Testemunho"
         text={biographyText5}
-        imageId="joaopaulo_zlxgpw"
+        imageIds={["joaopaulo_zlxgpw"]}
         imagePosition="left"
       />
       <Section
         title="Últimos Dias"
         text={biographyText6}
-        imageId="1_z7qhcr"
+        imageIds={["1_z7qhcr"]}
         imagePosition="right"
       />
       <Section
         title="Despedida e Homenagem"
         text={biographyText7}
-        imageId="3_wcobgp"
+        imageIds={["3_wcobgp"]}
         imagePosition="left"
       />
       <Section
         title="Legado"
         text={biographyText8}
-        imageId="cadeira_jy1iq6"
+        imageIds={["cadeira_jy1iq6"]}
         imagePosition="right"
+      />
+      <Section
+        title="30 anos de Saudade"
+        text={biographyText9}
+        imageIds={["30anos-Jader_xgzrkm", "30anos-missa_gfpult", "30anos-zeronaldo_cym7ns", "30anos-domangelo_sgyt2d"]}
+        imagePosition="left"
       />
     </div>
   );

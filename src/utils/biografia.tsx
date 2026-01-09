@@ -271,3 +271,52 @@ export const biographyText8 = (
     </blockquote>
   </div>
 );
+
+export const biographyText9 = (
+  <div className="prose max-w-none text-gray-800 leading-relaxed">
+    <p className={paragrafo}>
+      Em <strong className="font-semibold">janeiro de 2026</strong>, trinta anos
+      após o falecimento do{" "}
+      <strong className={destaque}>Pe. Ramón Sevillano</strong>, a{" "}
+      <span className={semiDestaque}>Diocese de Franca</span> deu início aos
+      primeiros passos do{" "}
+      <strong className="text-slate-700">processo de beatificação</strong>.
+    </p>
+
+    <p className={paragrafo}>
+      Cerca de <span className={semiDestaque}>150 pessoas</span> reuniram-se no{" "}
+      <em>Cemitério da Saudade</em> para um momento de oração em sufrágio, onde
+      se destacam numerosas{" "}
+      <strong>placas de agradecimento por graças alcançadas</strong>, sinal de
+      uma devoção espontânea que se mantém viva ao longo dos anos.
+    </p>
+
+    <p className={paragrafo}>
+      No mesmo dia, foi celebrada a{" "}
+      <strong className="font-semibold">Eucaristia em sufrágio</strong> na{" "}
+      <em>Sé Catedral Nossa Senhora da Imaculada Conceição</em>, presidida por{" "}
+      <span className={semiDestaque}>Dom Angelo Pignoli</span>, bispo emérito de
+      Quixadá (CE), com a participação de presbíteros e fiéis das comunidades
+      neocatecumenais.
+    </p>
+
+    <p className={paragrafo}>
+      A permanência dessa devoção ao longo do tempo, os relatos de graças
+      atribuídas à sua intercessão e o testemunho de uma vida entregue ao
+      Evangelho motivaram a Igreja a iniciar este caminho de discernimento.
+    </p>
+
+    <p className={paragrafo}>
+      Maiores informações no site oficial do Caminho Neocatecumenal no Brasil
+      em:{" "}
+      <a
+        href="https://cn.org.br/portal/celebracoes-em-sufragio-pelo-pe-ramon-sevillano-marcam-o-inicio-do-discernimento-sobre-sua-vida-e-testemunho-cristao/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:text-blue-800 underline"
+      >
+        cn.org.br
+      </a>
+    </p>
+  </div>
+);
