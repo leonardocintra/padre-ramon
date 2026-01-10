@@ -20,7 +20,7 @@ export default function Hero() {
           rel="noopener noreferrer"
           className="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
         >
-          Precisa de ajuda ?
+          Precisa de ajuda ? Fale conosco!
         </a>
         <p className="mt-4 text-lg font-medium text-gray-800">
           Conheça Padre Ramón

@@ -1,7 +1,7 @@
 // middleware.ts (na raiz do projeto)
 import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Verifica se está em modo de manutenção
   const isMaintenanceMode = false;
 

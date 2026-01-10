@@ -27,7 +27,7 @@ export default function Home() {
       <Section
         title="Infância e Vocação"
         text={biographyText}
-        imageIds={["juventude100"]}
+        imageIds={["juventude100", "juventude400"]}
         imagePosition="left"
       />
 
@@ -48,7 +48,7 @@ export default function Home() {
       <Section
         title="Missão no Brasil"
         text={biographyText4}
-        imageIds={["brasilia-fundacao_to4kfm"]}
+        imageIds={["brasilia-terreno_ax8z8c", "brasilia-fundacao_to4kfm", "brasilia_ciy0un"]}
         imagePosition="right"
       />
       <Section
@@ -72,7 +72,7 @@ export default function Home() {
       <Section
         title="Legado"
         text={biographyText8}
-        imageIds={["cadeira_jy1iq6"]}
+        imageIds={["cadeira_jy1iq6", "legado-ramon_avimf4"]}
         imagePosition="right"
       />
       <Section
