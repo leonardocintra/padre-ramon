@@ -54,9 +54,9 @@ export const photoGroups = [
       "Participou junto com a equipe do Caminho Neocatecumenal na construção do Seminário Redemptoris Mater de Brasília",
     photos: [
       {
-        src: "brasilia_ciy0un",
+        src: "brasilia-terreno_ax8z8c",
         alt: "Construção do Seminário",
-        caption: "Padre Ramón no inicio da construção do Seminário.",
+        caption: "Padre Ramón e iniciadores do Caminho Neocatecumenal no terreno do seminário.",
       },
       {
         src: "2_szjkyk",
