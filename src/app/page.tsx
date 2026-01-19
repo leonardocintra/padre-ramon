@@ -54,7 +54,7 @@ export default function Home() {
       <Section
         title="Caráter e Testemunho"
         text={biographyText5}
-        imageIds={["joaopaulo_zlxgpw"]}
+        imageIds={["joaopaulo2-100"]}
         imagePosition="left"
       />
       <Section

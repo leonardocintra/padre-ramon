@@ -81,6 +81,11 @@ export const photoGroups = [
     description: "Encontros com o Papa João Paulo II.",
     photos: [
       {
+        src: "joao-paulo-e-ramon_xqunzj",
+        alt: "Padre Ramón em missão",
+        caption: "Papa João Paulo II com Padre Ramón.",
+      },
+      {
         src: "joaopaulo2-200",
         alt: "Padre Ramón em missão",
         caption: "Papa João Paulo II com Padre Ramón.",
