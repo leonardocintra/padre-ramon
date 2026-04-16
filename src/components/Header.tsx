@@ -8,7 +8,7 @@ export default function Header() {
             <h1 className="font-extrabold text-2xl sm:text-3xl md:text-3xl tracking-wide font-serif text-center sm:text-left">
               Padre Ramón
             </h1>
-            <p className="text-sm sm:text-base font-light font-serif text-center sm:text-left mt-1">
+            <p className="text-sm sm:text-base font-light font-serif text-center sm:text-left mt-1 italic">
               Causa de beatificação
             </p>
           </div>
