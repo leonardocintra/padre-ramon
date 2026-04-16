@@ -13,7 +13,7 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: "Padre Ramon",
-  description: "Causa de Padre Ramon",
+  description: "Causa de Beatificação de Padre Ramon",
 };
 
 export default function RootLayout({
